@@ -26,11 +26,11 @@ async def huhh(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "program", url=f"https://t.me/U_H_D8"),
+                        "program", url=f"https://t.me/Fox4566"),
                  
              ],[ 
             InlineKeyboardButton(
-                        "SouRce", url=f"https://t.me/F_b_i_t"), 
+                        "SouRce", url=f"https://t.me/Loo_la3"), 
                    
              ],[ 
                   InlineKeyboardButton(
@@ -49,9 +49,9 @@ async def huhh(client: Client, message: Message):
 
 
 
-@app.on_message(command(["المبرمج اليكس","اليكس","مبرمج السورس"]))
+@app.on_message(command([" مطور السورس","فوكس","المطور"]))
 async def yas(client, message):
-    usr = await client.get_chat("U_H_D8")
+    usr = await client.get_chat(" Fox4566")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
     await message.reply_photo(photo,       caption=f"This Aliv Me Program.\n\n Name :{name}\n\n User :@{usr.username}\n\n Id :`{usr.id}`\n\n Bio :{usr.bio}\n\nSouRce Music Alex Best Source In Telegram", 
@@ -67,9 +67,9 @@ async def yas(client, message):
 
 
 
-@app.on_message(command(["مبرمج" , "المطور احمد","احمد"]))
+@app.on_message(command(["جولينا" , "ALAA","بودا"]))
 async def yas(client, message):
-    usr = await client.get_chat("U_H_D8")
+    usr = await client.get_chat("Loo_la3")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
     await message.reply_photo(photo,       caption=f"This Alive Me Program.\n\n Name :{name}\n\n User :@{usr.username}\n\n ID :`{usr.id}`\n\n Bio:{usr.bio}\n\nSource Music Alex Best Source In Telegram", 
