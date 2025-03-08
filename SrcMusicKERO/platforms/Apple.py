@@ -3,8 +3,7 @@ from typing import Union
 
 import aiohttp
 from bs4 import BeautifulSoup
-from  youtube-search-python.__future__ import VideosSearch
-
+from youtubesearchpython import VideosSearch
 
 class AppleAPI:
     def __init__(self):
