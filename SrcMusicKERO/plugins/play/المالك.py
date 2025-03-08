@@ -37,7 +37,7 @@ async def ownner(client: Client, message: Message):
        m = await app.get_users(int(x[0]))
        if m.photo:
          async for photo in app.get_chat_photos(x[0],limit=1):
-          await message.reply_photo(photo.file_id,caption=f"<b> الاســم  : {m.first_name}\n اســم المســتخدم : @{m.username}\n الايــدي : <code>{m.id}</code>\n الشــات : {message.chat.titlele}\n ايــدي الشــات : <code>{message.chat.id}</code></b>",reply_markup=InlineKeyboardMarkup(
+          await message.reply_photo(photo.file_id,caption=f"<b> الاســم  : {m.first_name}\n اســم المســتخدم : @{m.username}\n الايــدي : <code>{m.id}</code>\n الشــات : {message.chat.title}\n ايــدي الشــات : <code>{message.chat.id}</code></b>",reply_markup=InlineKeyboardMarkup(
              [              
                [          
                  InlineKeyboardButton(m.first_name, url=f"https://t.me/{m.username}")
@@ -46,7 +46,7 @@ async def ownner(client: Client, message: Message):
             )                     
           )
        else:
-        await message.reply_text(f"b> الاســم : {m.first_name}\n اســم المســتخدم : @{m.username}\n الايــدي : <code>{m.id}</code>\n الشـــات : {message.chat.title ايــدي الشــات : <code>{message.chat.id}</code></b>", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(m.first_name, url=f"https://t.me/{m.username}")],]))
+        await message.reply_text(f"b> الاســم : {m.first_name}\n اســم المســتخدم : @{m.username}\n الايــدي : <code>{m.id}</code>\n الشـــات : {message.chat.title, ايــدي الشــات : <code>{message.chat.id}</code></b>", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(m.first_name, url=f"https://t.me/{m.username}")],]))
     else:
         await message.reply_text("عزيزي المالك هذا حساب محذوف\n༄")
 
@@ -83,7 +83,7 @@ async def iddd(client, message):
     usr = await client.get_chat(message.from_user.id)
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"⤄الاسم: {message.from_user.mention}\n⤄اليوزر: @{message.from_user.username}\n⤄ايدي:`{message.from_user.id}`\nʙɪᴏᚐ: {usr.bio}\n⤄جروب: {message.chat.titlele}\n⤄ايدي الجروب : `{message.chat.id}`", 
+    await message.reply_photo(photo,       caption=f"⤄الاسم: {message.from_user.mention}\n⤄اليوزر: @{message.from_user.username}\n⤄ايدي:`{message.from_user.id}`\nʙɪᴏᚐ: {usr.bio}\n⤄جروب: {message.chat.title}\n⤄ايدي الجروب : `{message.chat.id}`", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
