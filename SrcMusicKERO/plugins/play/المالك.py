@@ -46,7 +46,16 @@ async def ownner(client: Client, message: Message):
             )                     
           )
        else:
-        await message.reply_text(f"b> الاســم : {m.first_name}\n اســم المســتخدم : @{m.username}\n الايــدي : <code>{m.id}</code>\n الشـــات : {message.chat.title, ايــدي الشــات : <code>{message.chat.id}</code></b>", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(m.first_name, url=f"https://t.me/{m.username}")],]))
+        await message.reply_text(
+    f"b> الاســم : {m.first_name}\n"
+    f"اســم المســتخدم : @{m.username}\n"
+    f"الايدى : <code>{m.id}</code>\n"
+    f"الشــات : {message.chat.title}\n"
+    f"ايــدي الشــات : <code>{message.chat.id}</code></b>",
+    reply_markup=InlineKeyboardMarkup(
+        [[InlineKeyboardButton(m.first_name, url=f"https://t.me/{m.username}")]]
+    )
+)
     else:
         await message.reply_text("عزيزي المالك هذا حساب محذوف\n༄")
 
