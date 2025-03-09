@@ -28,7 +28,7 @@ tgcrypto
 requests
 speedtest-cli
 unidecode
-yt-dlp
+yt-dlp==2024.10.22
 gpytranslate
 SpeechRecognition
 pytz
