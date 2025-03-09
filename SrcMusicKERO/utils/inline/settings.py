@@ -1,7 +1,5 @@
 from typing import Union
-
 from pyrogram.types import InlineKeyboardButton
-
 
 def setting_markup(_):
     buttons = [
@@ -13,6 +11,9 @@ def setting_markup(_):
         ],
         [
             InlineKeyboardButton(text=_["ST_B_4"], callback_data="VM"),
+        ],
+        [
+            InlineKeyboardButton(text="🌍 اختيار اللغة", callback_data="change_lang"),  # ← زر اختيار اللغة
         ],
         [
             InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
