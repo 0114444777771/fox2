@@ -7,7 +7,8 @@ def start_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="aDD Me To Your Groups", url=f"https://t.me/{app.username}?startgroup=true"
+                text="➕ أضفني إلى مجموعتك", 
+                url=f"https://t.me/{app.username}?startgroup=true"
             ),
         ],
     ]
@@ -18,16 +19,15 @@ def private_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="aDD Me To Your Groups",
-                url=f"https://t.me/{app.username}?startgroup=true",
+                text="➕ أضفني إلى مجموعتك", 
+                url=f"https://t.me/{app.username}?startgroup=true"
             )
         ],
-        
         [
-            InlineKeyboardButton(text="𝗗𝗲𝘃 .", url=f"https://t.me/U_H_D8") ,
+            InlineKeyboardButton(text="👨‍💻 المطوّر", url="https://t.me/Fox4566"),
         ],
-        [   
-            InlineKeyboardButton(text="𝗦𝗼𝘂𝗿𝗰𝗲 .", url=f"https://t.me/v_i_p_w") , 
+        [
+            InlineKeyboardButton(text="📡 قناة السورس", url="https://t.me/PX_CBL"),
         ],
     ]
     return buttons
