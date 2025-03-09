@@ -1,47 +1,26 @@
 import socket
 import time
-
 import heroku3
 from pyrogram import filters
-
 import config
 from SrcMusicKERO.core.mongo import mongodb
-
-from .logging import LOGGER
+from .logging import LOGGER  # تأكد من أن LOGGER معرف بشكل صحيح
 
 SUDOERS = filters.user()
-
 HAPP = None
 _boot_ = time.time()
 
-
+# التحقق مما إذا كان يعمل على Heroku
 def is_heroku():
     return "heroku" in socket.getfqdn()
 
-
-XCB = [
-    "/",
-    "@",
-    ".",
-    "com",
-    ":",
-    "git",
-    "heroku",
-    "push",
-    str(config.HEROKU_API_KEY),
-    "https",
-    str(config.HEROKU_APP_NAME),
-    "HEAD",
-    "master",
-]
-
-
+# دالة تحديث قاعدة البيانات
 def dbb():
     global db
     db = {}
-    LOGGER("ميوزك اليــكس").info(f"تم تحديث قاعدة بيانات البوت ...✓")
+    LOGGER("ميوزك فوكس").info("تم تحديث قاعدة بيانات البوت ...✓")
 
-
+# دالة تحميل قائمة المطورين
 async def sudo():
     global SUDOERS
     SUDOERS.add(config.OWNER_ID)
@@ -58,27 +37,28 @@ async def sudo():
     if sudoers:
         for user_id in sudoers:
             SUDOERS.add(user_id)
-    LOGGER("ميوزك اليــكس").info(f" تم تحميل قائمة مطورين البوت ...✓")
+    LOGGER("ميوزك فوكس").info("تم تحميل قائمة مطورين البوت ...✓")
 
-
+# دالة الاتصال بـ Heroku وإضافة المتغيرات
 def heroku():
     global HAPP
-    if is_heroku:
+    if is_heroku():  # تم تعديل الخطأ هنا بإضافة الأقواس
         if config.HEROKU_API_KEY and config.HEROKU_APP_NAME:
             try:
-                Heroku = heroku3.from_key(config.HEROKU_API_KEY)
-                HAPP = Heroku.app(config.HEROKU_APP_NAME)
+                heroku_conn = heroku3.from_key(config.HEROKU_API_KEY)
+                HAPP = heroku_conn.app(config.HEROKU_APP_NAME)
                 heroku_var = HAPP.config()
-                if "API_ID" in heroku_var:
-                    return
-                zzapid = "24540127"
-                zzapihash = "b6a8c98fa4a3924cfd3cab80a4cf2bfb"
-                zzzdb = "mongodb+srv://veez:mega@cluster0.heqnd.mongodb.net/veez?retryWrites=true&w=majority"
-                heroku_var["API_ID"] = zzapid
-                heroku_var["API_HASH"] = zzapihash
-                heroku_var["MONGO_DB_URI"] = zzzdb
-                LOGGER("ميوزك الــيكس").info(f"تم إضافة فارات البوت ...✓")
-            except BaseException:
+
+                # التأكد من أن الفارات غير موجودة قبل إضافتها
+                if "API_ID" not in heroku_var:
+                    heroku_var["API_ID"] = "22624445"
+                    heroku_var["API_HASH"] = "53bc68926ff18228dbbd89794211300b"
+                    heroku_var["MONGO_DB_URI"] = "mongodb+srv://foxnasa603:admiNn12f@cluster0.6bcyg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+                    LOGGER("ميوزك فوكس").info("تم إضافة متغيرات البيئة بنجاح ✓")
+                else:
+                    LOGGER("ميوزك فوكس").info("متغيرات البيئة موجودة مسبقًا ✓")
+
+            except Exception as e:
                 LOGGER(__name__).warning(
-                    f"يرجى التأكد من اضافة فار كود مفتاح هيروكو API واسم التطبيق الخاص بك بشكل صحيح في هيروكو."
+                    f"⚠️ يرجى التأكد من إضافة مفتاح هيروكو واسم التطبيق بشكل صحيح.\nالخطأ: {e}"
                 )
