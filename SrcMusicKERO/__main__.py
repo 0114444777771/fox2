@@ -36,24 +36,24 @@ async def init():
     await app.start()
     for all_module in ALL_MODULES:
         importlib.import_module("SrcMusicKERO.plugins" + all_module)
-    LOGGER("ميوزك اليــكس").info("تم تحميل الاضافات ...✓")
+    LOGGER("ميوزك فوكس").info("تم تحميل الاضافات ...✓")
     await userbot.start()
     await Zelzaly.start()
     try:
         await Zelzaly.stream_call("https://telegra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
-        LOGGER("ميوزك اليــكس").info(
+        LOGGER("ميوزك فوكس").info(
             "خطأ .. قم بفتح المكالمة في مجموعة السجل الخاصه بك\n\nجارِ ايقاف بوت الميوزك . . ."
         )
         exit()
     except:
         pass
     await Zelzaly.decorators()
-    LOGGER("ميوزك اليــكس").info("TmLotus")
+    LOGGER("ميوزك فوكس").info("TmLotus")
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("ميوزك اليــكس").info("جارِ ايقاف بوت الميوزك . . .")
+    LOGGER("ميوزك فوكس").info("جارِ ايقاف بوت الميوزك . . .")
 
 
 if __name__ == "__main__":
