@@ -85,12 +85,12 @@ async def cast(client: app, message):
 @app.on_message(filters.regex("✭ قـنـاة الـسـورس"))
 def reply_to_HEY(Client, message):
     message.reply_photo(
-        photo=f"https://graph.org/file/90ced8b5c59117e8b077d.jpg",
-        caption=f"""[ َِ.Source music Alex.〙-𓏺Whoever humbles #himself to god will be #exalted](https://t.me/F_b_i_t)""",
+        photo=f"https://envs.sh/S7N.webp",
+        caption=f"""[ َِ.Source music Titanx.〙-𓏺Whoever humbles #himself to god will be #exalted](https://t.me/PX_CBL)""",
         reply_markup=InlineKeyboardMarkup(
             [
             [
-                InlineKeyboardButton("SouRce", url=f"https://t.me/F_b_i_t"),
+                InlineKeyboardButton("SouRce", url=f"https://t.me/PX_CBL"),
             ]
          ]
      )
@@ -105,13 +105,13 @@ def reply_to_HEY(Client, message):
 @app.on_message(filters.regex("✭ للتواصل معنآ"))
 def reply_to_HEY(Client, message):
     message.reply_photo(
-        photo=f"https://t.me/Alex_Basha",
-        caption=f"""[لـطـلـب ســورس مـيـوزك خـاص بــك او مــيـزه في ســورس مـيـوزك لا تـتـردد فـي الـتـواصـل مـعـي مـن خـلال الـزر فـي الأسـفـل ♬♪](https://t.me/U_H_D8)""",
+        photo=f"https://t.me/Titanx_Basha",
+        caption=f"""[لـطـلـب ســورس مـيـوزك خـاص بــك او مــيـزه في ســورس مـيـوزك لا تـتـردد فـي الـتـواصـل مـعـي مـن خـلال الـزر فـي الأسـفـل ♬♪](https://t.me/Fox4566)""",
         reply_markup=InlineKeyboardMarkup(
             [
             [
-                InlineKeyboardButton("Source", url=f"https://t.me/F_b_i_t"),
-                InlineKeyboardButton("program", url=f"https://t.me/U_H_D8"),
+                InlineKeyboardButton("Source", url=f"https://t.me/ii_qio"),
+                InlineKeyboardButton("program", url=f"https://t.me/PX_CBL"),
             ]
          ]
      )
@@ -131,8 +131,8 @@ def forward(client: Client, message: Message):
   rank = rank.status
   #if message.from_user.id == {OWNER_ID}:
   # app.send_message(chat_id," • رتبتك هي : مطور البوت")
-  if message.from_user.id == 7020374464:
-   app.send_message(chat_id," • رتبتك هي : مــبـرمــج الـسـورس الـــيكــس")
+  if message.from_user.id == 6908157965:
+   app.send_message(chat_id," • رتبتك هي : مــبـرمــج الـسـورس فوكس")
   if rank == "administrator":
    app.send_message(chat_id," • رتبتك هي : مطور في المجموعه")
   elif rank == "creator":
@@ -158,7 +158,7 @@ async def italy(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Alex Source", url=f"https://t.me/F_b_i_t"),
+                    InlineKeyboardButton("Titanx Source", url=f"https://t.me/PX_CBL"),
                 ],
             ]
         ),
@@ -175,7 +175,7 @@ async def italy(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Source Alex", url=f"https://t.me/F_b_i_t"),
+                    InlineKeyboardButton("Source Titanx", url=f"https://t.me/PX_CBL"),
                 ],
             ]
         ),
@@ -193,7 +193,7 @@ async def italy(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Source Alex", url=f"https://t.me/F_b_i_t"),
+                    InlineKeyboardButton("Source Titanx", url=f"https://t.me/PX_CBL"),
                 ],
             ]
         ),
@@ -211,7 +211,7 @@ async def italy(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Source Alex", url=f"https://t.me/F_b_i_t"),
+                    InlineKeyboardButton("Source Titanx", url=f"https://t.me/PX_CBL"),
                 ],
             ]
         ),
@@ -228,7 +228,7 @@ async def italy(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Source Alex", url=f"https://t.me/F_b_i_t"),
+                    InlineKeyboardButton("Source Titanx", url=f"https://t.me/PX_CBL"),
                 ],
             ]
         ),
@@ -247,7 +247,7 @@ async def italy(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Source Alex", url=f"https://t.me/F_b_i_t"),
+                    InlineKeyboardButton("Source Titanx", url=f"https://t.me/PX_CBL"),
                 ],
             ]
         ),
@@ -264,7 +264,7 @@ async def italy(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Source Alex", url=f"https://t.me/F_b_i_t"),
+                    InlineKeyboardButton("Source Titanx", url=f"https://t.me/PX_CBL"),
                 ],
             ]
         ),
@@ -281,7 +281,7 @@ async def italy(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Source Alex", url=f"https://t.me/F_b_i_t"),
+                    InlineKeyboardButton("Source Titanx", url=f"https://t.me/PX_CBL"),
                 ],
             ]
         ),
@@ -294,11 +294,11 @@ async def italy(client: Client, message: Message):
     name = usr.first_name
     async for photo in client.iter_profile_photos(message.from_user.id, limit=1):
                     await message.reply_text( 
-                    f"""**نبذه سريعه عن** مــيوزك الـعالم كيب   **: **ماهو بيتا كيبورد🤔** **هو اصدار اولي قابل لتعديل في اي وقت قابل الاضافة مميزات واضافة جديد في اي وقت بي اختصار قابل لتحديث ولاضافه في اي وقت**🫡""",
+                    f"""**نبذه سريعه عن** مــيوزك Titanx كيب   **: **ماهو بيتا كيبورد🤔** **هو اصدار اولي قابل لتعديل في اي وقت قابل الاضافة مميزات واضافة جديد في اي وقت بي اختصار قابل لتحديث ولاضافه في اي وقت**🫡""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Source Alex", url=f"https://t.me/F_b_i_t"),
+                    InlineKeyboardButton("Source Titanx", url=f"https://t.me/PX_CBL"),
                 ],
             ]
         ),
@@ -313,7 +313,7 @@ async def italy(_, query: CallbackQuery):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Sorce Alex", url=f"https://t.me/F_b_i_t"),
+                    InlineKeyboardButton("Sorce Titanx", url=f"https://t.me/PX_CBL"),
                ],
             ]
         ),
