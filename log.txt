@@ -105,3 +105,209 @@
 [08-Mar-25 22:44:54 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
 [08-Mar-25 22:44:57 - INFO] - ميوزك اليــكس -  تم تحميل قائمة مطورين البوت ...✓
 [08-Mar-25 22:45:00 - INFO] - ميوزك اليــكس -  تم بدء تشغيل البوت Fox  ...✓
+[09-Mar-25 14:38:38 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
+[09-Mar-25 14:38:39 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
+[09-Mar-25 14:38:39 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
+[09-Mar-25 14:38:39 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
+[09-Mar-25 14:38:39 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
+[09-Mar-25 14:38:41 - INFO] - ميوزك اليــكس -  تم تحميل قائمة مطورين البوت ...✓
+[09-Mar-25 14:38:44 - INFO] - ميوزك اليــكس -  تم بدء تشغيل البوت Fox  ...✓
+[09-Mar-25 14:38:45 - INFO] - ميوزك اليــكس - تم تحميل الاضافات ...✓
+[09-Mar-25 14:38:45 - INFO] - مـيـوزك اليــكس - جـار تـشـغـيـل الـحـسـاب الـمـسـاعـد
+[09-Mar-25 14:38:46 - INFO] - مـيـوزك اليــكس - تم بدء تشغيل الحساب المساعد <a href=tg://user?id=7483904002>Dd</a> ...✓
+[09-Mar-25 14:38:46 - INFO] - ميــوزك اليــكس - جارِ تحميل مكاتب الميوزك . . .
+
+[09-Mar-25 14:38:46 - INFO] - ميوزك اليــكس - TmLotus
+[09-Mar-25 14:39:19 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1246' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002468196969')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002468196969'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002468196969
+[09-Mar-25 14:39:37 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1381' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002468196969')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002468196969'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002468196969
+[09-Mar-25 14:39:38 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1390' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002468196969')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002468196969'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002468196969
+[09-Mar-25 14:39:50 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1462' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002468196969')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002468196969'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002468196969
+[09-Mar-25 14:40:14 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1631' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002468196969')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002468196969'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002468196969
+[09-Mar-25 14:40:30 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1724' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002468196969')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002468196969'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002468196969
+[09-Mar-25 14:40:38 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1750' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002468196969')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002468196969'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002468196969
+[09-Mar-25 14:40:50 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1838' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002468196969')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002468196969'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002468196969
+[09-Mar-25 14:40:51 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1859' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002468196969')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002468196969'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002468196969
+[09-Mar-25 14:40:51 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1864' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002468196969')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002468196969'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002468196969
+[09-Mar-25 14:41:13 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[09-Mar-25 14:41:13 - INFO] - SrcMusicKERO.core.userbot - جـار ايـقـاف الـحـسـاب الـمـسـاعد...⁦♡
+[09-Mar-25 14:41:13 - INFO] - ميوزك اليــكس - جارِ ايقاف بوت الميوزك . . .
