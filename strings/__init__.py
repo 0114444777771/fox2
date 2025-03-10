@@ -1,62 +1,29 @@
-from pyrogram.types import InlineKeyboardButton
-from SrcMusicKERO import app
-from .translation import translations
+import os
+from typing import List
 
-def get_string(lang):
-    return translations.get(lang, {})  # ✅ يعيد قاموس الترجمة بناءً على اللغة
-# تخزين لغة كل مستخدم
-user_languages = {}
+import yaml
 
-def get_text(user_id, key):
-    """ استرجاع النص المناسب حسب لغة المستخدم """
-    from strings import get_string  # استيراد داخل الدالة لتجنب المشكلة
-    lang = user_languages.get(user_id, "ar")  # العربية هي الافتراضية
-    return get_string(lang).get(key, key)  # جلب النص من ملف الترجمة
+languages = {}
+languages_present = {}
 
-def start_panel(user_id):
-    """ إنشاء لوحة الأزرار عند بدء التشغيل """
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text=get_text(user_id, "add_group"), 
-                url=f"https://t.me/{app.username}?startgroup=true"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=get_text(user_id, "choose_language"), 
-                callback_data="change_lang"
-            ),
-        ]
-    ]
-    return buttons
 
-def private_panel(user_id):
-    """ إنشاء لوحة الأزرار للمحادثات الخاصة """
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text=get_text(user_id, "add_group"), 
-                url=f"https://t.me/{app.username}?startgroup=true"
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text=get_text(user_id, "developer"), 
-                url="https://t.me/Fox4566"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=get_text(user_id, "source_channel"), 
-                url="https://t.me/PX_CBL"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text=get_text(user_id, "choose_language"), 
-                callback_data="change_lang"
-            ),
-        ]
-    ]
-    return buttons
+def get_string(lang: str):
+    return languages[lang]
+
+
+for filename in os.listdir(r"./strings/langs/"):
+    if "en" not in languages:
+        languages["en"] = yaml.safe_load(
+            open(r"./strings/langs/en.yml", encoding="utf8")
+        )
+        languages_present["en"] = languages["en"]["name"]
+    if filename.endswith(".yml"):
+        language_name = filename[:-4]
+        if language_name == "en":
+            continue
+        languages[language_name] = yaml.safe_load(
+            open(r"./strings/langs/" + filename, encoding="utf8")
+        )
+        for item in languages["en"]:
+            if item not in languages[language_name]:
+                languages[language_name][item] = languages["en"][item]
