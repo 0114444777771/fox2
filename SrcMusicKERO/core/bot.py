@@ -31,5 +31,6 @@ async def start(self):
             )
             exit()
 
-        LOGGER("ميوزك فوكس").info(f" تم بدء تشغيل البوت {self.name} ...✓")
+    LOGGER("ميوزك فوكس").info(f" تم بدء تشغيل البوت {self.name} ...✓")
+
 class Zelzaly(Client):
