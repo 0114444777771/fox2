@@ -1,14 +1,12 @@
 from pyrogram import Client, errors
 from pyrogram.enums import ChatMemberStatus, ParseMode
-
 import config
-
 from ..logging import LOGGER
 
 
 class Zelzaly(Client):
     def __init__(self):
-        LOGGER("ميوزك الــيكـس").info(f"جارِ بدء تشغيل البوت . . .")
+        LOGGER("ميوزك فوكس").info(f"جارِ بدء تشغيل البوت . . .")
         super().__init__(
             name="SrcMusicKERO",
             api_id=config.API_ID,
@@ -26,29 +24,46 @@ class Zelzaly(Client):
         self.username = self.me.username
         self.mention = self.me.mention
 
+        print(f"📌 يتم محاولة الوصول إلى مجموعة السجلات: {config.LOGGER_ID}")
+
         try:
+            log_chat = await self.get_chat(config.LOGGER_ID)
+            LOGGER("ميوزك فوكس").info(f"✅ تم الوصول إلى مجموعة السجلات: {log_chat.title}")
+
             await self.send_message(
                 chat_id=config.LOGGER_ID,
-                text=f"<u><b>» تم تشغيل الميـوزك لـ البوت {self.mention} :</b><u>\n\n- ɪᴅ : <code>{self.id}</code>\n- ɴᴀᴍᴇ : {self.name}\n- ᴜsᴇʀɴᴀᴍᴇ : @{self.username}",
+                text=f"<u><b>» تم تشغيل الميـوزك لـ البوت {self.mention} :</b><u>\n\n"
+                     f"- ɪᴅ : <code>{self.id}</code>\n"
+                     f"- ɴᴀᴍᴇ : {self.name}\n"
+                     f"- ᴜsᴇʀɴᴀᴍᴇ : @{self.username}",
             )
         except (errors.ChannelInvalid, errors.PeerIdInvalid):
             LOGGER(__name__).error(
-                "» قم باضافة البـوت مشـرفـاً بكافة الصلاحيات في مجموعـة السجـل"
+                "❌ قم باضافة البوت كمشرف بكافة الصلاحيات في مجموعة السجلات!"
             )
             exit()
         except Exception as ex:
             LOGGER(__name__).error(
-                f"Bot has failed to access the log group/channel.\n  Reason : {type(ex).__name__}."
+                f"❌ فشل الوصول إلى مجموعة السجلات.\n"
+                f"🔹 الخطأ: {type(ex).__name__} - {ex}"
             )
             exit()
 
-        a = await self.get_chat_member(config.LOGGER_ID, self.id)
-        if a.status != ChatMemberStatus.ADMINISTRATOR:
+        try:
+            a = await self.get_chat_member(config.LOGGER_ID, self.id)
+            if a.status != ChatMemberStatus.ADMINISTRATOR:
+                LOGGER(__name__).error(
+                    "❌ قم برفع البوت مشرفًا بكافة الصلاحيات في مجموعة السجلات!"
+                )
+                exit()
+        except Exception as ex:
             LOGGER(__name__).error(
-                "» قم برفـع البـوت مشـرفـاً بكافة الصلاحيات في مجموعـة السجـل"
+                f"❌ حدث خطأ عند التحقق من صلاحيات البوت في مجموعة السجلات.\n"
+                f"🔹 الخطأ: {type(ex).__name__} - {ex}"
             )
             exit()
-        LOGGER("ميوزك فوكس").info(f" تم بدء تشغيل البوت {self.name} ...✓")
+
+        LOGGER("ميوزك فوكس").info(f"✅ تم بدء تشغيل البوت {self.name} بنجاح!")
 
     async def stop(self):
         await super().stop()
