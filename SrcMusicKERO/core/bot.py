@@ -27,7 +27,8 @@ class Zelzaly(Client):
         print(f"📌 يتم محاولة الوصول إلى مجموعة السجلات: {config.LOGGER_ID}")
 
         try:
-            log_chat = await self.get_chat(config.LOGGER_ID)
+            log_chat = await self.get_chat(int(config.LOGGER_ID))
+print(f"🔍 [DEBUG] نوع log_chat: {type(log_chat)}")  # طباعة نوع الكائن
             LOGGER("ميوزك فوكس").info(f"✅ تم الوصول إلى مجموعة السجلات: {log_chat.title}")
 
             await self.send_message(
