@@ -1,25 +1,4 @@
-from pyrogram import Client, errors
-from pyrogram.enums import ChatMemberStatus, ParseMode
-
-import config
-
-from ..logging import LOGGER
-
-
-class Zelzaly(Client):
-    def __init__(self):
-        LOGGER("ميوزك فوكس").info(f"جارِ بدء تشغيل البوت . . .")
-        super().__init__(
-            name="SrcMusicKERO",
-            api_id=config.API_ID,
-            api_hash=config.API_HASH,
-            bot_token=config.BOT_TOKEN,
-            in_memory=True,
-            parse_mode=ParseMode.HTML,
-            max_concurrent_transmissions=7,
-        )
-
-    async def start(self):
+async def start(self):
         await super().start()
         self.id = self.me.id
         self.name = self.me.first_name + " " + (self.me.last_name or "")
@@ -27,6 +6,9 @@ class Zelzaly(Client):
         self.mention = self.me.mention
 
         try:
+            log_chat = await self.get_chat(config.LOGGER_ID)
+            LOGGER("ميوزك فوكس").info(f"✅ تم الوصول إلى مجموعة السجلات: {log_chat.title}")
+
             await self.send_message(
                 chat_id=config.LOGGER_ID,
                 text=f"<u><b>» تم تشغيل الميـوزك لـ البوت {self.mention} :</b><u>\n\n- ɪᴅ : <code>{self.id}</code>\n- ɴᴀᴍᴇ : {self.name}\n- ᴜsᴇʀɴᴀᴍᴇ : @{self.username}",
@@ -48,7 +30,5 @@ class Zelzaly(Client):
                 "» قم برفـع البـوت مشـرفـاً بكافة الصلاحيات في مجموعـة السجـل"
             )
             exit()
-        LOGGER("ميوزك فوكس").info(f" تم بدء تشغيل البوت {self.name} ...✓")
 
-    async def stop(self):
-        await super().stop()
+        LOGGER("ميوزك فوكس").info(f" تم بدء تشغيل البوت {self.name} ...✓")
