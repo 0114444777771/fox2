@@ -47,20 +47,20 @@ class Userbot(Client):
         )
 
     async def start(self):
-        LOGGER("مـيـوزك فوكس").info(f"جـار تـشـغـيـل الـحـسـاب الـمـسـاعـد")
+        LOGGER("مـيـوزك اليــكس").info(f"جـار تـشـغـيـل الـحـسـاب الـمـسـاعـد")
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("fox68899")
-                await self.one.join_chat("PX_CBL")
-                await self.one.join_chat("ii_qio")
+                await self.one.join_chat("DE_FK")
+                await self.one.join_chat("A_l_e_3_x")
+                await self.one.join_chat("F_b_i_u")
             except:
                 pass
             assistants.append(1)
             try:
                 await self.one.send_message(config.LOGGER_ID, "» تم تشغيـل الحسـاب المسـاعـد .. بنجـاح 🎭")
             except:
-                LOGGER("مـيـوزك فوكس").error(
+                LOGGER("مـيـوزك اليــكس").error(
                     "حـدث خـطـاء اثـنـاء تـشـغـيـل الـحـسـاب الـمـسـاعـد تـاكـد انـك قـمـت بـأضـفـته لـجـروب الاشـعـارات ورفـعـه ادمـن...⁦♡"
                 )
                 exit()
@@ -68,14 +68,14 @@ class Userbot(Client):
             self.one.name = self.one.me.mention
             self.one.username = self.one.me.username
             assistantids.append(self.one.id)
-            LOGGER("مـيـوزك فوكس").info(f"تم بدء تشغيل الحساب المساعد {self.one.name} ...✓")
+            LOGGER("مـيـوزك اليــكس").info(f"تم بدء تشغيل الحساب المساعد {self.one.name} ...✓")
 
         if config.STRING2:
             await self.two.start()
             try:
-                await self.one.join_chat("fox68899")
-                await self.one.join_chat("PX_CBL")
-                await self.one.join_chat("ii_qio")
+                await self.one.join_chat("DE_FK")
+                await self.one.join_chat("A_l_e_3_x")
+                await self.one.join_chat("F_b_i_u")
             except:
                 pass
             assistants.append(2)
@@ -90,21 +90,21 @@ class Userbot(Client):
             self.two.name = self.two.me.mention
             self.two.username = self.two.me.username
             assistantids.append(self.two.id)
-            LOGGER("مـيـوزك فوكس").info(f"تم بدء تشغيل الحساب المساعد² {self.one.name} ...✓")
+            LOGGER("مـيـوزك اليــكس").info(f"تم بدء تشغيل الحساب المساعد² {self.one.name} ...✓")
 
         if config.STRING3:
             await self.three.start()
             try:
-                await self.one.join_chat("fox68899")
-                await self.one.join_chat("PX_CBL")
-                await self.one.join_chat("ii_qio")
+                await self.one.join_chat("DE_FK")
+                await self.one.join_chat("A_l_e_3_x")
+                await self.one.join_chat("F_b_i_u")
             except:
                 pass
             assistants.append(3)
             try:
                 await self.three.send_message(config.LOGGER_ID, "» تم تشغيـل الحسـاب المسـاعـد³ .. بنجـاح ✅")
             except:
-                LOGGER("مـيـوزك فوكس").error(
+                LOGGER("مـيـوزك اليــكس").error(
                     "حـدث خـطـاء اثـنـاء تـشـغـيـل الـحـسـاب الـمـسـاعـد³ تـاكـد انـك قـمـت بـأضـفـته لـجـروب الاشـعـارات ورفـعـه ادمـن...⁦♡"
                 )
                 exit()
@@ -112,21 +112,21 @@ class Userbot(Client):
             self.three.name = self.three.me.mention
             self.three.username = self.three.me.username
             assistantids.append(self.three.id)
-            LOGGER("مـيـوزك فوكس").info(f"تم بدء تشغيل الحساب المساعد³ {self.one.name} ...✓")
+            LOGGER("مـيـوزك اليــكس").info(f"تم بدء تشغيل الحساب المساعد³ {self.one.name} ...✓")
 
         if config.STRING4:
             await self.four.start()
             try:
-                await self.one.join_chat("fox68899")
-                await self.one.join_chat("PX_CBL")
-                await self.one.join_chat("ii_qio")
+                await self.one.join_chat("DE_FK")
+                await self.one.join_chat("A_l_e_3_x")
+                await self.one.join_chat("F_b_i_u")
             except:
                 pass
             assistants.append(4)
             try:
                 await self.four.send_message(config.LOGGER_ID, "» تم تشغيـل الحسـاب المسـاعـد⁴ .. بنجـاح ✅")
             except:
-                LOGGER("مـيـوزك فوكس").error(
+                LOGGER("مـيـوزك اليــكس").error(
                     "حـدث خـطـاء اثـنـاء تـشـغـيـل الـحـسـاب الـمـسـاعـد⁴ تـاكـد انـك قـمـت بـأضـفـته لـجـروب الاشـعـارات ورفـعـه ادمـن...⁦♡"
                 )
                 exit()
@@ -134,21 +134,21 @@ class Userbot(Client):
             self.four.name = self.four.me.mention
             self.four.username = self.four.me.username
             assistantids.append(self.four.id)
-            LOGGER("مـيـوزك فوكس").info(f"تم بدء تشغيل الحساب المساعد⁴ {self.one.name} ...✓")
+            LOGGER("مـيـوزك اليــكس").info(f"تم بدء تشغيل الحساب المساعد⁴ {self.one.name} ...✓")
 
         if config.STRING5:
             await self.five.start()
             try:
-                await self.one.join_chat("fox68899")
-                await self.one.join_chat("PX_CBL")
-                await self.one.join_chat("ii_qio")
+                await self.one.join_chat("DE_FK")
+                await self.one.join_chat("A_l_e_3_x")
+                await self.one.join_chat("F_b_i_u")
             except:
                 pass
             assistants.append(5)
             try:
                 await self.five.send_message(config.LOGGER_ID, "» تم تشغيـل الحسـاب المسـاعـد⅝ .. بنجـاح ✅")
             except:
-                LOGGER("مـيـوزك فوكس").error(
+                LOGGER("مـيـوزك اليــكس").error(
                     "حـدث خـطـاء اثـنـاء تـشـغـيـل الـحـسـاب الـمـسـاعـد⅝ تـاكـد انـك قـمـت بـأضـفـته لـجـروب الاشـعـارات ورفـعـه ادمـن...⁦♡"
                 )
                 exit()
@@ -156,7 +156,7 @@ class Userbot(Client):
             self.five.name = self.five.me.mention
             self.five.username = self.five.me.username
             assistantids.append(self.five.id)
-            LOGGER("مـيـوزك فوكس").info(f"تم بدء تشغيل الحساب المساعد⅝ {self.one.name} ...✓")
+            LOGGER("مـيـوزك اليــكس").info(f"تم بدء تشغيل الحساب المساعد⅝ {self.one.name} ...✓")
 
     async def stop(self):
         LOGGER(__name__).info(f"جـار ايـقـاف الـحـسـاب الـمـسـاعد...⁦♡")
