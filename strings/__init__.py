@@ -1,5 +1,4 @@
 from pyrogram.types import InlineKeyboardButton
-from strings import get_string  # استيراد دالة جلب الترجمة
 from SrcMusicKERO import app
 
 # تخزين لغة كل مستخدم
@@ -7,10 +6,12 @@ user_languages = {}
 
 def get_text(user_id, key):
     """ استرجاع النص المناسب حسب لغة المستخدم """
+    from strings import get_string  # استيراد داخل الدالة لتجنب المشكلة
     lang = user_languages.get(user_id, "ar")  # العربية هي الافتراضية
     return get_string(lang).get(key, key)  # جلب النص من ملف الترجمة
 
 def start_panel(user_id):
+    """ إنشاء لوحة الأزرار عند بدء التشغيل """
     buttons = [
         [
             InlineKeyboardButton(
@@ -28,6 +29,7 @@ def start_panel(user_id):
     return buttons
 
 def private_panel(user_id):
+    """ إنشاء لوحة الأزرار للمحادثات الخاصة """
     buttons = [
         [
             InlineKeyboardButton(
