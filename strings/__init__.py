@@ -1,6 +1,9 @@
 from pyrogram.types import InlineKeyboardButton
 from SrcMusicKERO import app
+from .translation import translations
 
+def get_string(lang):
+    return translations.get(lang, {})  # ✅ يعيد قاموس الترجمة بناءً على اللغة
 # تخزين لغة كل مستخدم
 user_languages = {}
 
