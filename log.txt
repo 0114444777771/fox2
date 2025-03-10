@@ -452,3 +452,11 @@ ValueError: Peer id invalid: -1002468196969
 [10-Mar-25 21:26:00 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
 [10-Mar-25 21:26:04 - ERROR] - SrcMusicKERO.core.bot - Bot has failed to access the log group/channel.
   Reason : AttributeError.
+[10-Mar-25 21:37:53 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
+[10-Mar-25 21:37:53 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
+[10-Mar-25 21:37:53 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
+[10-Mar-25 21:37:53 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
+[10-Mar-25 21:37:53 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
+[10-Mar-25 21:37:55 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
+[10-Mar-25 21:37:59 - ERROR] - SrcMusicKERO.core.bot - Bot has failed to access the log group/channel.
+  Reason : AttributeError.
