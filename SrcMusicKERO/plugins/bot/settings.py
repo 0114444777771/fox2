@@ -1,4 +1,4 @@
-from pyrogram import filters
+from pyrogram import Client, filters
 from pyrogram.enums import ChatType
 from pyrogram.errors import MessageNotModified
 from pyrogram.types import (
@@ -35,7 +35,6 @@ from SrcMusicKERO.utils.inline.settings import (
 )
 from SrcMusicKERO.utils.inline.start import private_panel
 from config import BANNED_USERS, OWNER_ID
-
 
 @app.on_message(
     filters.command(["settings", "setting"]) & filters.group & ~BANNED_USERS
@@ -389,3 +388,14 @@ async def vote_change(client, CallbackQuery, _):
         )
     except MessageNotModified:
         return
+
+
+@app.on_callback_query(filters.regex("^change_lang$"))
+async def change_language_callback(client: Client, query: CallbackQuery):
+    """ عند الضغط على زر تغيير اللغة، تظهر قائمة اللغات """
+    keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton(text=name, callback_data=f"set_lang_{code}")]
+        for code, name in LANGUAGES.items()
+    ] + [[InlineKeyboardButton("🔙 الرجوع", callback_data="settings_helper")]])
+    
+    await query.message.edit_text("🌍 اختر لغتك:", reply_markup=keyboard)
