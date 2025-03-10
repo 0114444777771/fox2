@@ -14,7 +14,7 @@ from SrcMusicKERO.utils.database import (
     is_skipmode,
 )
 from config import adminlist, confirmer
-from strings import get_string
+import strings
 
 from ..formatters import int_to_alpha
 
