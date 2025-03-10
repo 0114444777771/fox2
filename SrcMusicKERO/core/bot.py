@@ -24,15 +24,26 @@ class Zelzaly(Client):
         self.username = self.me.username
         self.mention = self.me.mention
 
-        print(f"📌 يتم محاولة الوصول إلى مجموعة السجلات: {config.LOGGER_ID}")
+        # التأكد من أن LOGGER_ID صالح
+        try:
+            logger_id = int(config.LOGGER_ID) if isinstance(config.LOGGER_ID, str) else config.LOGGER_ID
+        except ValueError:
+            LOGGER(__name__).error("❌ قيمة LOGGER_ID غير صحيحة! تأكد من إدخال رقم المجموعة بشكل صحيح.")
+            exit()
+
+        print(f"📌 يتم محاولة الوصول إلى مجموعة السجلات: {logger_id}")
 
         try:
-            log_chat = await self.get_chat(int(config.LOGGER_ID))
-            print(f"🔍 [DEBUG] نوع log_chat: {type(log_chat)}")  # طباعة نوع الكائن
+            log_chat = await self.get_chat(logger_id)
+            print(f"🔍 [DEBUG] نوع log_chat: {type(log_chat)} - البيانات: {log_chat}")
+
+            if not hasattr(log_chat, "id"):
+                raise AttributeError("لم يتم العثور على 'id' داخل كائن log_chat.")
+
             LOGGER("ميوزك فوكس").info(f"✅ تم الوصول إلى مجموعة السجلات: {log_chat.title}")
 
             await self.send_message(
-                chat_id=int(config.LOGGER_ID),
+                chat_id=log_chat.id,
                 text=f"<u><b>» تم تشغيل الميـوزك لـ البوت {self.mention} :</b><u>\n\n"
                      f"- ɪᴅ : <code>{self.id}</code>\n"
                      f"- ɴᴀᴍᴇ : {self.name}\n"
@@ -50,9 +61,10 @@ class Zelzaly(Client):
             )
             exit()
 
+        # التحقق من صلاحيات البوت في المجموعة
         try:
-            a = await self.get_chat_member(int(config.LOGGER_ID), self.id)
-            if a.status != ChatMemberStatus.ADMINISTRATOR:
+            chat_member = await self.get_chat_member(logger_id, self.id)
+            if chat_member.status != ChatMemberStatus.ADMINISTRATOR:
                 LOGGER(__name__).error(
                     "❌ قم برفع البوت مشرفًا بكافة الصلاحيات في مجموعة السجلات!"
                 )
