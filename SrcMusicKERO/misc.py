@@ -10,17 +10,14 @@ SUDOERS = filters.user()
 HAPP = None
 _boot_ = time.time()
 
-# التحقق مما إذا كان يعمل على Heroku
 def is_heroku():
     return "heroku" in socket.getfqdn()
 
-# دالة تحديث قاعدة البيانات
 def dbb():
     global db
     db = {}
-    LOGGER("ميوزك فوكس").info("تم تحديث قاعدة بيانات البوت ...✓")
+    LOGGER.info("تم تحديث قاعدة بيانات البوت ...✓")  # ✅ التصحيح هنا
 
-# دالة تحميل قائمة المطورين
 async def sudo():
     global SUDOERS
     SUDOERS.add(config.OWNER_ID)
@@ -37,28 +34,26 @@ async def sudo():
     if sudoers:
         for user_id in sudoers:
             SUDOERS.add(user_id)
-    LOGGER("ميوزك فوكس").info("تم تحميل قائمة مطورين البوت ...✓")
+    LOGGER.info("تم تحميل قائمة مطورين البوت ...✓")  # ✅ التصحيح هنا
 
-# دالة الاتصال بـ Heroku وإضافة المتغيرات
 def heroku():
     global HAPP
-    if is_heroku():  # تم تعديل الخطأ هنا بإضافة الأقواس
+    if is_heroku():
         if config.HEROKU_API_KEY and config.HEROKU_APP_NAME:
             try:
                 heroku_conn = heroku3.from_key(config.HEROKU_API_KEY)
                 HAPP = heroku_conn.app(config.HEROKU_APP_NAME)
                 heroku_var = HAPP.config()
 
-                # التأكد من أن الفارات غير موجودة قبل إضافتها
                 if "API_ID" not in heroku_var:
                     heroku_var["API_ID"] = "22624445"
                     heroku_var["API_HASH"] = "53bc68926ff18228dbbd89794211300b"
                     heroku_var["MONGO_DB_URI"] = "mongodb+srv://foxnasa603:admiNn12f@cluster0.6bcyg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-                    LOGGER("ميوزك فوكس").info("تم إضافة متغيرات البيئة بنجاح ✓")
+                    LOGGER.info("تم إضافة متغيرات البيئة بنجاح ✓")  # ✅ التصحيح هنا
                 else:
-                    LOGGER("ميوزك فوكس").info("متغيرات البيئة موجودة مسبقًا ✓")
+                    LOGGER.info("متغيرات البيئة موجودة مسبقًا ✓")  # ✅ التصحيح هنا
 
             except Exception as e:
-                LOGGER(__name__).warning(
+                LOGGER.warning(
                     f"⚠️ يرجى التأكد من إضافة مفتاح هيروكو واسم التطبيق بشكل صحيح.\nالخطأ: {e}"
-                )
+                )  # ✅ التصحيح هنا
