@@ -1,494 +1,0 @@
-[08-Mar-25 21:11:58 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[08-Mar-25 21:11:58 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[08-Mar-25 21:11:58 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[08-Mar-25 21:11:58 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[08-Mar-25 21:11:58 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[08-Mar-25 21:12:22 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[08-Mar-25 21:12:22 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[08-Mar-25 21:12:22 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[08-Mar-25 21:12:22 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[08-Mar-25 21:12:22 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[08-Mar-25 21:15:53 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[08-Mar-25 21:15:53 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[08-Mar-25 21:15:53 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[08-Mar-25 21:15:53 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[08-Mar-25 21:15:53 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[08-Mar-25 21:17:32 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[08-Mar-25 21:17:33 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[08-Mar-25 21:17:33 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[08-Mar-25 21:17:33 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[08-Mar-25 21:17:33 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[08-Mar-25 21:18:39 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[08-Mar-25 21:18:39 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[08-Mar-25 21:18:39 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[08-Mar-25 21:18:39 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[08-Mar-25 21:18:39 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[08-Mar-25 21:22:45 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[08-Mar-25 21:22:45 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[08-Mar-25 21:22:45 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[08-Mar-25 21:22:45 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[08-Mar-25 21:22:45 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[08-Mar-25 21:24:28 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[08-Mar-25 21:24:28 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[08-Mar-25 21:24:28 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[08-Mar-25 21:24:28 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[08-Mar-25 21:24:28 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[08-Mar-25 21:27:06 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[08-Mar-25 21:27:06 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[08-Mar-25 21:27:06 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[08-Mar-25 21:27:06 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[08-Mar-25 21:27:06 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[08-Mar-25 21:27:57 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[08-Mar-25 21:27:58 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[08-Mar-25 21:27:58 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[08-Mar-25 21:27:58 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[08-Mar-25 21:27:58 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[08-Mar-25 21:28:23 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[08-Mar-25 21:28:23 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[08-Mar-25 21:28:23 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[08-Mar-25 21:28:23 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[08-Mar-25 21:28:23 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[08-Mar-25 21:30:50 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[08-Mar-25 21:30:50 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[08-Mar-25 21:30:50 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[08-Mar-25 21:30:50 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[08-Mar-25 21:30:50 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[08-Mar-25 21:34:01 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[08-Mar-25 21:34:01 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[08-Mar-25 21:34:01 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[08-Mar-25 21:34:01 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[08-Mar-25 21:34:01 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[08-Mar-25 21:35:52 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[08-Mar-25 21:35:52 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[08-Mar-25 21:35:52 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[08-Mar-25 21:35:52 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[08-Mar-25 21:35:52 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[08-Mar-25 22:30:54 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[08-Mar-25 22:30:54 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[08-Mar-25 22:30:54 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[08-Mar-25 22:30:54 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[08-Mar-25 22:30:54 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[08-Mar-25 22:30:57 - INFO] - ميوزك اليــكس -  تم تحميل قائمة مطورين البوت ...✓
-[08-Mar-25 22:31:01 - INFO] - ميوزك اليــكس -  تم بدء تشغيل البوت Fox  ...✓
-[08-Mar-25 22:31:46 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[08-Mar-25 22:31:46 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[08-Mar-25 22:31:46 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[08-Mar-25 22:31:46 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[08-Mar-25 22:31:46 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[08-Mar-25 22:31:47 - INFO] - ميوزك اليــكس -  تم تحميل قائمة مطورين البوت ...✓
-[08-Mar-25 22:31:52 - INFO] - ميوزك اليــكس -  تم بدء تشغيل البوت Fox  ...✓
-[08-Mar-25 22:36:52 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[08-Mar-25 22:36:52 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[08-Mar-25 22:36:52 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[08-Mar-25 22:36:52 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[08-Mar-25 22:36:52 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[08-Mar-25 22:36:54 - INFO] - ميوزك اليــكس -  تم تحميل قائمة مطورين البوت ...✓
-[08-Mar-25 22:36:58 - INFO] - ميوزك اليــكس -  تم بدء تشغيل البوت Fox  ...✓
-[08-Mar-25 22:41:02 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[08-Mar-25 22:41:02 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[08-Mar-25 22:41:02 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[08-Mar-25 22:41:02 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[08-Mar-25 22:41:02 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[08-Mar-25 22:41:03 - INFO] - ميوزك اليــكس -  تم تحميل قائمة مطورين البوت ...✓
-[08-Mar-25 22:41:07 - INFO] - ميوزك اليــكس -  تم بدء تشغيل البوت Fox  ...✓
-[08-Mar-25 22:42:42 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[08-Mar-25 22:42:42 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[08-Mar-25 22:42:42 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[08-Mar-25 22:42:42 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[08-Mar-25 22:42:42 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[08-Mar-25 22:42:43 - INFO] - ميوزك اليــكس -  تم تحميل قائمة مطورين البوت ...✓
-[08-Mar-25 22:42:47 - INFO] - ميوزك اليــكس -  تم بدء تشغيل البوت Fox  ...✓
-[08-Mar-25 22:44:54 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[08-Mar-25 22:44:54 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[08-Mar-25 22:44:54 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[08-Mar-25 22:44:54 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[08-Mar-25 22:44:54 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[08-Mar-25 22:44:57 - INFO] - ميوزك اليــكس -  تم تحميل قائمة مطورين البوت ...✓
-[08-Mar-25 22:45:00 - INFO] - ميوزك اليــكس -  تم بدء تشغيل البوت Fox  ...✓
-[09-Mar-25 14:38:38 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[09-Mar-25 14:38:39 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[09-Mar-25 14:38:39 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[09-Mar-25 14:38:39 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[09-Mar-25 14:38:39 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[09-Mar-25 14:38:41 - INFO] - ميوزك اليــكس -  تم تحميل قائمة مطورين البوت ...✓
-[09-Mar-25 14:38:44 - INFO] - ميوزك اليــكس -  تم بدء تشغيل البوت Fox  ...✓
-[09-Mar-25 14:38:45 - INFO] - ميوزك اليــكس - تم تحميل الاضافات ...✓
-[09-Mar-25 14:38:45 - INFO] - مـيـوزك اليــكس - جـار تـشـغـيـل الـحـسـاب الـمـسـاعـد
-[09-Mar-25 14:38:46 - INFO] - مـيـوزك اليــكس - تم بدء تشغيل الحساب المساعد <a href=tg://user?id=7483904002>Dd</a> ...✓
-[09-Mar-25 14:38:46 - INFO] - ميــوزك اليــكس - جارِ تحميل مكاتب الميوزك . . .
-
-[09-Mar-25 14:38:46 - INFO] - ميوزك اليــكس - TmLotus
-[09-Mar-25 14:39:19 - ERROR] - asyncio - Task exception was never retrieved
-future: <Task finished name='Task-1246' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002468196969')>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
-    return await self.storage.get_peer_by_id(peer_id)
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
-    raise KeyError(f"ID not found: {peer_id}")
-KeyError: 'ID not found: -1002468196969'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
-    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
-    peer_type = utils.get_peer_type(peer_id)
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
-    raise ValueError(f"Peer id invalid: {peer_id}")
-ValueError: Peer id invalid: -1002468196969
-[09-Mar-25 14:39:37 - ERROR] - asyncio - Task exception was never retrieved
-future: <Task finished name='Task-1381' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002468196969')>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
-    return await self.storage.get_peer_by_id(peer_id)
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
-    raise KeyError(f"ID not found: {peer_id}")
-KeyError: 'ID not found: -1002468196969'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
-    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
-    peer_type = utils.get_peer_type(peer_id)
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
-    raise ValueError(f"Peer id invalid: {peer_id}")
-ValueError: Peer id invalid: -1002468196969
-[09-Mar-25 14:39:38 - ERROR] - asyncio - Task exception was never retrieved
-future: <Task finished name='Task-1390' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002468196969')>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
-    return await self.storage.get_peer_by_id(peer_id)
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
-    raise KeyError(f"ID not found: {peer_id}")
-KeyError: 'ID not found: -1002468196969'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
-    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
-    peer_type = utils.get_peer_type(peer_id)
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
-    raise ValueError(f"Peer id invalid: {peer_id}")
-ValueError: Peer id invalid: -1002468196969
-[09-Mar-25 14:39:50 - ERROR] - asyncio - Task exception was never retrieved
-future: <Task finished name='Task-1462' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002468196969')>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
-    return await self.storage.get_peer_by_id(peer_id)
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
-    raise KeyError(f"ID not found: {peer_id}")
-KeyError: 'ID not found: -1002468196969'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
-    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
-    peer_type = utils.get_peer_type(peer_id)
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
-    raise ValueError(f"Peer id invalid: {peer_id}")
-ValueError: Peer id invalid: -1002468196969
-[09-Mar-25 14:40:14 - ERROR] - asyncio - Task exception was never retrieved
-future: <Task finished name='Task-1631' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002468196969')>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
-    return await self.storage.get_peer_by_id(peer_id)
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
-    raise KeyError(f"ID not found: {peer_id}")
-KeyError: 'ID not found: -1002468196969'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
-    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
-    peer_type = utils.get_peer_type(peer_id)
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
-    raise ValueError(f"Peer id invalid: {peer_id}")
-ValueError: Peer id invalid: -1002468196969
-[09-Mar-25 14:40:30 - ERROR] - asyncio - Task exception was never retrieved
-future: <Task finished name='Task-1724' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002468196969')>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
-    return await self.storage.get_peer_by_id(peer_id)
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
-    raise KeyError(f"ID not found: {peer_id}")
-KeyError: 'ID not found: -1002468196969'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
-    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
-    peer_type = utils.get_peer_type(peer_id)
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
-    raise ValueError(f"Peer id invalid: {peer_id}")
-ValueError: Peer id invalid: -1002468196969
-[09-Mar-25 14:40:38 - ERROR] - asyncio - Task exception was never retrieved
-future: <Task finished name='Task-1750' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002468196969')>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
-    return await self.storage.get_peer_by_id(peer_id)
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
-    raise KeyError(f"ID not found: {peer_id}")
-KeyError: 'ID not found: -1002468196969'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
-    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
-    peer_type = utils.get_peer_type(peer_id)
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
-    raise ValueError(f"Peer id invalid: {peer_id}")
-ValueError: Peer id invalid: -1002468196969
-[09-Mar-25 14:40:50 - ERROR] - asyncio - Task exception was never retrieved
-future: <Task finished name='Task-1838' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002468196969')>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
-    return await self.storage.get_peer_by_id(peer_id)
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
-    raise KeyError(f"ID not found: {peer_id}")
-KeyError: 'ID not found: -1002468196969'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
-    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
-    peer_type = utils.get_peer_type(peer_id)
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
-    raise ValueError(f"Peer id invalid: {peer_id}")
-ValueError: Peer id invalid: -1002468196969
-[09-Mar-25 14:40:51 - ERROR] - asyncio - Task exception was never retrieved
-future: <Task finished name='Task-1859' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002468196969')>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
-    return await self.storage.get_peer_by_id(peer_id)
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
-    raise KeyError(f"ID not found: {peer_id}")
-KeyError: 'ID not found: -1002468196969'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
-    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
-    peer_type = utils.get_peer_type(peer_id)
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
-    raise ValueError(f"Peer id invalid: {peer_id}")
-ValueError: Peer id invalid: -1002468196969
-[09-Mar-25 14:40:51 - ERROR] - asyncio - Task exception was never retrieved
-future: <Task finished name='Task-1864' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002468196969')>
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
-    return await self.storage.get_peer_by_id(peer_id)
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
-    raise KeyError(f"ID not found: {peer_id}")
-KeyError: 'ID not found: -1002468196969'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
-    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
-    peer_type = utils.get_peer_type(peer_id)
-  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
-    raise ValueError(f"Peer id invalid: {peer_id}")
-ValueError: Peer id invalid: -1002468196969
-[09-Mar-25 14:41:13 - INFO] - root - Stop signal received (SIGINT). Exiting...
-[09-Mar-25 14:41:13 - INFO] - SrcMusicKERO.core.userbot - جـار ايـقـاف الـحـسـاب الـمـسـاعد...⁦♡
-[09-Mar-25 14:41:13 - INFO] - ميوزك اليــكس - جارِ ايقاف بوت الميوزك . . .
-[09-Mar-25 15:03:28 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[09-Mar-25 15:03:29 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[09-Mar-25 15:03:29 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[09-Mar-25 15:03:29 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[09-Mar-25 15:03:29 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[09-Mar-25 15:03:30 - INFO] - ميوزك اليــكس -  تم تحميل قائمة مطورين البوت ...✓
-[09-Mar-25 15:03:34 - ERROR] - SrcMusicKERO.core.bot - Bot has failed to access the log group/channel.
-  Reason : AttributeError.
-[09-Mar-25 15:03:47 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[09-Mar-25 15:03:47 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[09-Mar-25 15:03:47 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[09-Mar-25 15:03:47 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[09-Mar-25 15:03:47 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[09-Mar-25 15:03:49 - INFO] - ميوزك اليــكس -  تم تحميل قائمة مطورين البوت ...✓
-[09-Mar-25 15:03:52 - ERROR] - SrcMusicKERO.core.bot - Bot has failed to access the log group/channel.
-  Reason : AttributeError.
-[10-Mar-25 18:06:18 - INFO] - ميوزك اليــكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 18:06:18 - INFO] - ميوزك اليــكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 18:06:18 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[10-Mar-25 18:06:18 - INFO] - ميوزك اليــكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 18:06:18 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 18:06:21 - INFO] - ميوزك اليــكس -  تم تحميل قائمة مطورين البوت ...✓
-[10-Mar-25 18:06:24 - ERROR] - SrcMusicKERO.core.bot - Bot has failed to access the log group/channel.
-  Reason : AttributeError.
-[10-Mar-25 18:07:25 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 18:07:25 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 18:07:25 - INFO] - ميوزك فوكس - تم تحـديث السـورس ...✓
-[10-Mar-25 18:07:25 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 18:07:25 - INFO] - ميوزك فوكس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 18:07:56 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 18:07:56 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 18:07:56 - INFO] - ميوزك فوكس - تم تحـديث السـورس ...✓
-[10-Mar-25 18:07:56 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 18:07:56 - INFO] - ميوزك فوكس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 18:12:03 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 18:12:03 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 18:12:03 - INFO] - ميوزك فوكس - تم تحـديث السـورس ...✓
-[10-Mar-25 18:12:03 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 18:12:03 - INFO] - ميوزك فوكس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 18:24:17 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 18:24:17 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 18:24:17 - INFO] - ميوزك فوكس - تم تحـديث السـورس ...✓
-[10-Mar-25 18:24:17 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 18:24:17 - INFO] - ميوزك فوكس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 18:26:46 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 18:26:46 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 18:26:46 - INFO] - ميوزك فوكس - تم تحـديث السـورس ...✓
-[10-Mar-25 18:26:46 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 18:26:46 - INFO] - ميوزك فوكس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 18:29:20 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 18:29:20 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 18:29:20 - INFO] - ميوزك فوكس - تم تحـديث السـورس ...✓
-[10-Mar-25 18:29:20 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 18:29:20 - INFO] - ميوزك فوكس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 18:29:22 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
-[10-Mar-25 18:29:26 - ERROR] - SrcMusicKERO.core.bot - Bot has failed to access the log group/channel.
-  Reason : AttributeError.
-[10-Mar-25 18:32:29 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 18:32:29 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 18:32:29 - INFO] - ميوزك فوكس - تم تحـديث السـورس ...✓
-[10-Mar-25 18:32:29 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 18:32:29 - INFO] - ميوزك فوكس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 18:32:30 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
-[10-Mar-25 18:32:34 - ERROR] - SrcMusicKERO.core.bot - Bot has failed to access the log group/channel.
-  Reason : AttributeError.
-[10-Mar-25 19:15:02 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 19:15:02 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 19:15:02 - INFO] - ميوزك فوكس - تم تحـديث السـورس ...✓
-[10-Mar-25 19:15:02 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 19:23:56 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 19:23:56 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 19:23:56 - INFO] - ميوزك فوكس - تم تحـديث السـورس ...✓
-[10-Mar-25 19:23:56 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 19:23:56 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 19:23:57 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
-[10-Mar-25 19:24:02 - ERROR] - SrcMusicKERO.core.bot - Bot has failed to access the log group/channel.
-  Reason : AttributeError.
-[10-Mar-25 19:29:34 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 19:29:34 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 19:29:34 - INFO] - ميوزك فوكس - تم تحـديث السـورس ...✓
-[10-Mar-25 19:29:34 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 19:29:34 - INFO] - ميوزك فوكس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 19:29:35 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
-[10-Mar-25 19:29:39 - ERROR] - SrcMusicKERO.core.bot - ❌ فشل الوصول إلى مجموعة السجلات.
-🔹 الخطأ: AttributeError - 'str' object has no attribute 'chat_id'
-[10-Mar-25 19:35:19 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 19:35:19 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 19:35:19 - INFO] - ميوزك فوكس - تم تحـديث السـورس ...✓
-[10-Mar-25 19:35:19 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 19:35:19 - INFO] - ميوزك فوكس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 19:35:21 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
-[10-Mar-25 19:35:24 - ERROR] - SrcMusicKERO.core.bot - ❌ فشل الوصول إلى مجموعة السجلات.
-🔹 الخطأ: AttributeError - 'str' object has no attribute 'chat_id'
-[10-Mar-25 19:35:41 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 19:35:41 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 19:35:41 - INFO] - ميوزك فوكس - تم تحـديث السـورس ...✓
-[10-Mar-25 19:35:41 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 19:35:41 - INFO] - ميوزك فوكس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 19:35:43 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
-[10-Mar-25 19:35:46 - ERROR] - SrcMusicKERO.core.bot - ❌ فشل الوصول إلى مجموعة السجلات.
-🔹 الخطأ: AttributeError - 'str' object has no attribute 'chat_id'
-[10-Mar-25 19:37:17 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 19:37:17 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 19:37:17 - INFO] - ميوزك فوكس - تم تحـديث السـورس ...✓
-[10-Mar-25 19:37:17 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 19:37:17 - INFO] - ميوزك فوكس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 19:37:19 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
-[10-Mar-25 19:37:22 - ERROR] - SrcMusicKERO.core.bot - ❌ فشل الوصول إلى مجموعة السجلات.
-🔹 الخطأ: AttributeError - 'str' object has no attribute 'chat_id'
-[10-Mar-25 19:44:50 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 19:44:50 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 19:44:50 - INFO] - ميوزك فوكس - تم تحـديث السـورس ...✓
-[10-Mar-25 19:44:50 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 19:44:50 - INFO] - ميوزك فوكس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 19:44:52 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
-[10-Mar-25 19:44:55 - ERROR] - SrcMusicKERO.core.bot - ❌ فشل الوصول إلى مجموعة السجلات.
-🔹 الخطأ: AttributeError - 'str' object has no attribute 'chat_id'
-[10-Mar-25 19:55:10 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 19:55:10 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 19:55:10 - INFO] - ميوزك فوكس - تم تحـديث السـورس ...✓
-[10-Mar-25 19:55:10 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 19:55:10 - INFO] - ميوزك فوكس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 19:55:12 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
-[10-Mar-25 19:55:16 - ERROR] - SrcMusicKERO.core.bot - ❌ فشل الوصول إلى مجموعة السجلات.
-🔹 الخطأ: AttributeError - 'str' object has no attribute 'chat_id'
-[10-Mar-25 21:12:50 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 21:12:50 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 21:12:50 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[10-Mar-25 21:12:50 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 21:12:50 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 21:12:52 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
-[10-Mar-25 21:12:56 - ERROR] - SrcMusicKERO.core.bot - Bot has failed to access the log group/channel.
-  Reason : AttributeError.
-[10-Mar-25 21:25:58 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 21:25:59 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 21:25:59 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[10-Mar-25 21:25:59 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 21:25:59 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 21:26:00 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
-[10-Mar-25 21:26:04 - ERROR] - SrcMusicKERO.core.bot - Bot has failed to access the log group/channel.
-  Reason : AttributeError.
-[10-Mar-25 21:37:53 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 21:37:53 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 21:37:53 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[10-Mar-25 21:37:53 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 21:37:53 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 21:37:55 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
-[10-Mar-25 21:37:59 - ERROR] - SrcMusicKERO.core.bot - Bot has failed to access the log group/channel.
-  Reason : AttributeError.
-[10-Mar-25 21:42:11 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 21:42:11 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 21:42:11 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[10-Mar-25 21:42:11 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 21:42:11 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 21:42:12 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
-[10-Mar-25 21:42:15 - ERROR] - SrcMusicKERO.core.bot - Bot has failed to access the log group/channel.
-  Reason : AttributeError.
-[10-Mar-25 21:45:16 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 21:45:16 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 21:45:16 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[10-Mar-25 21:45:16 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 21:45:16 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 21:45:18 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
-[10-Mar-25 21:45:21 - ERROR] - SrcMusicKERO.core.bot - Bot has failed to access the log group/channel.
-  Reason : AttributeError.
-[10-Mar-25 21:50:22 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[10-Mar-25 21:50:22 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[10-Mar-25 21:50:22 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[10-Mar-25 21:50:22 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[10-Mar-25 21:50:22 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[10-Mar-25 21:50:23 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
-[10-Mar-25 21:50:26 - ERROR] - SrcMusicKERO.core.bot - Bot has failed to access the log group/channel.
-  Reason : AttributeError.
-[11-Mar-25 06:59:23 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[11-Mar-25 06:59:23 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[11-Mar-25 06:59:23 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[11-Mar-25 06:59:23 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[11-Mar-25 06:59:23 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[11-Mar-25 06:59:25 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
-[11-Mar-25 06:59:28 - ERROR] - SrcMusicKERO.core.bot - Bot has failed to access the log group/channel.
-  Reason : AttributeError.
