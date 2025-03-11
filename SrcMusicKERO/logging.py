@@ -1,11 +1,12 @@
 import logging
+import sys
 
 logging.basicConfig(
-    level=logging.INFO,
+    level=logging.DEBUG,  # تغيير إلى DEBUG لمعرفة السبب الحقيقي للخطأ
     format="[%(asctime)s - %(levelname)s] - %(name)s - %(message)s",
     datefmt="%d-%b-%y %H:%M:%S",
     handlers=[
-        logging.StreamHandler(),  # إزالة FileHandler
+        logging.StreamHandler(sys.stdout),  # التأكد من طباعة الأخطاء على الشاشة
     ],
 )
 
@@ -15,4 +16,9 @@ logging.getLogger("pytgcalls").setLevel(logging.ERROR)
 
 
 def LOGGER(name: str) -> logging.Logger:
-    return logging.getLogger(name)
+    logger = logging.getLogger(name)
+    if not logger.handlers:
+        handler = logging.StreamHandler(sys.stdout)
+        handler.setFormatter(logging.Formatter("[%(asctime)s - %(levelname)s] - %(name)s - %(message)s"))
+        logger.addHandler(handler)
+    return logger
