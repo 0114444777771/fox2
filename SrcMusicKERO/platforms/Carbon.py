@@ -60,12 +60,13 @@ class CarbonAPI:
                 request.raise_for_status()  # تأكد من نجاح الطلب
             except client_exceptions.ClientConnectorError:
                 raise UnableToFetchCarbon("Can not reach the Host!")
-            
+
             resp = await request.read()
             file_path = f"cache/carbon{user_id}.jpg"
             
             # استخدام aiofiles للكتابة غير المتزامنة
             async with aiofiles.open(file_path, "wb") as f:
+                print(f"f type: {type(f)}")  # إضافة طباعة لفحص النوع
                 await f.write(resp)
 
             return realpath(file_path)
