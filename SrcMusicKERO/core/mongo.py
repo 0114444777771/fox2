@@ -4,7 +4,7 @@ from config import MONGO_DB_URI
 
 from ..logging import LOGGER
 
-LOGGER("ميوزك فوكس").info("جـارِ الاتصـال بقاعـدة البيانـات . . .")
+LOGGER.info("ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .")
 try:
     _mongo_async_ = AsyncIOMotorClient(MONGO_DB_URI)
     mongodb = _mongo_async_.myDatabase
