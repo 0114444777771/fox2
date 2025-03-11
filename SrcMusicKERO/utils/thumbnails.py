@@ -60,11 +60,10 @@ async def get_thumb(videoid):
         async with aiohttp.ClientSession() as session:
             async with session.get(thumbnail) as resp:
                 if resp.status == 200:
-                    f = await aiofiles.open(
-                        f"cache/thumb{videoid}.png", mode="wb"
-                    )
-                    await f.write(await resp.read())
-                    await f.close()
+                    async with aiofiles.open(f"cache/thumb{videoid}.png", mode="wb") as f:
+                        print(f"f type: {type(f)}")  # إضافة طباعة لفحص النوع
+                        await f.write(await resp.read())
+
         wxyz = await app.download_media(
             (await app.get_users(int(OWNER_ID))).photo.big_file_id,
               file_name=f"{OWNER_ID}.jpg",
@@ -148,5 +147,5 @@ async def get_thumb(videoid):
         background.save(f"cache/{videoid}.png")
         return f"cache/{videoid}.png"
     except Exception as e:
-        await app.send_message("AlEx",e)
+        await app.send_message("AlEx", e)
         return YOUTUBE_IMG_URL
