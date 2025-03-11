@@ -48,7 +48,7 @@ def heroku():
                 if "API_ID" not in heroku_var:
                     heroku_var["API_ID"] = "22624445"
                     heroku_var["API_HASH"] = "53bc68926ff18228dbbd89794211300b"
-                    heroku_var["MONGO_DB_URI"] = "mongodb+srv://foxnasa603:admiNn12f@cluster0.6bcyg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+                    heroku_var["MONGO_DB_URI"] = "mongodb+srv://foxnasa603:admiNn12f@cluster0.6bcyg.mongodb.net/myDatabase?retryWrites=true&w=majority&appName=Cluster0"
                     LOGGER.info("تم إضافة متغيرات البيئة بنجاح ✓")  # ✅ التصحيح هنا
                 else:
                     LOGGER.info("متغيرات البيئة موجودة مسبقًا ✓")  # ✅ التصحيح هنا
