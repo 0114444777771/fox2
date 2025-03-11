@@ -71,7 +71,8 @@ async def executor(client: app, message: Message):
     if len(final_output) > 4096:
         filename = "output.txt"
         with open(filename, "w", encoding="utf-8") as out_file:
-            out_file.write(evaluation)
+            print(f"out_file type: {type(out_file)}")  # إضافة طباعة لفحص النوع
+            out_file.write(str(evaluation))
         
         t2 = time()
         keyboard = InlineKeyboardMarkup(
@@ -157,10 +158,12 @@ async def shellrunner(_, message: Message):
     if len(final_output) > 4096:
         filename = "output.txt"
         with open(filename, "w", encoding="utf-8") as file:
-            file.write(final_output)
+            print(f"file type: {type(file)}")  # إضافة طباعة لفحص النوع
+            file.write(output)
+        
         await app.send_document(message.chat.id, filename, reply_to_message_id=message.id, caption="<code>Output</code>")
         os.remove(filename)
     else:
         await edit_or_reply(message, text=final_output)
-    
+
     await message.stop_propagation()
