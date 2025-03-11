@@ -3,12 +3,11 @@ from pyrogram import Client, errors
 from pyrogram.enums import ChatMemberStatus, ParseMode
 
 import config
-from ..logging import LOGGER
-
+from ..logging import LOGGER  # تأكد أن LOGGER معرّف ككائن logging.Logger
 
 class Zelzaly(Client):
     def __init__(self):
-        LOGGER("ميوزك الــيكـس").info("جارِ بدء تشغيل البوت . . .")
+        LOGGER.info("ميوزك اليــكس - جارِ بدء تشغيل البوت . . .")
         super().__init__(
             name="SrcMusicKERO",
             api_id=config.API_ID,
@@ -30,7 +29,7 @@ class Zelzaly(Client):
             self.mention = me.mention
 
             if not self.LOGGER_ID:
-                LOGGER(__name__).error("» خطأ: لم يتم تعيين معرف مجموعة السجل (LOGGER_ID) في config.py.")
+                LOGGER.error("» خطأ: لم يتم تعيين معرف مجموعة السجل (LOGGER_ID) في config.py.")
                 sys.exit(1)
 
             try:
@@ -42,24 +41,24 @@ class Zelzaly(Client):
                          f"- ᴜsᴇʀɴᴀᴍᴇ : @{self.username}",
                 )
             except (errors.ChannelInvalid, errors.PeerIdInvalid):
-                LOGGER(__name__).error("» قم باضافة البـوت مشـرفـاً بكافة الصلاحيات في مجموعة السجل")
+                LOGGER.error("» قم باضافة البـوت مشـرفـاً بكافة الصلاحيات في مجموعة السجل")
                 sys.exit(1)
             except Exception as ex:
-                LOGGER(__name__).error(f"Bot has failed to access the log group/channel.\n  Reason: {type(ex).__name__} - {ex}.")
+                LOGGER.error(f"Bot has failed to access the log group/channel.\n  Reason: {type(ex).__name__} - {ex}.")
                 sys.exit(1)
 
             try:
                 chat_member = await self.get_chat_member(self.LOGGER_ID, self.id)
                 if chat_member.status != ChatMemberStatus.ADMINISTRATOR:
-                    LOGGER(__name__).error("» قم برفـع البـوت مشـرفـاً بكافة الصلاحيات في مجموعة السجل")
+                    LOGGER.error("» قم برفـع البـوت مشـرفـاً بكافة الصلاحيات في مجموعة السجل")
                     sys.exit(1)
             except Exception as ex:
-                LOGGER(__name__).error(f"Failed to verify bot's admin status in log group.\n  Reason: {type(ex).__name__} - {ex}.")
+                LOGGER.error(f"Failed to verify bot's admin status in log group.\n  Reason: {type(ex).__name__} - {ex}.")
                 sys.exit(1)
 
-            LOGGER("ميوزك اليــكس").info(f"تم بدء تشغيل البوت {self.name} ...✓")
+            LOGGER.info(f"تم بدء تشغيل البوت {self.name} ...✓")
         except Exception as ex:
-            LOGGER("ميوزك اليــكس").error(f"فشل تشغيل البوت.\n  السبب: {type(ex).__name__} - {ex}")
+            LOGGER.error(f"فشل تشغيل البوت.\n  السبب: {type(ex).__name__} - {ex}")
             sys.exit(1)
 
     async def stop(self):
