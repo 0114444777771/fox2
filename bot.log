@@ -1,46 +1,45 @@
-[11-Mar-25 17:59:00 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
-[11-Mar-25 17:59:00 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
-[11-Mar-25 17:59:00 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
-[11-Mar-25 17:59:00 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
-[11-Mar-25 17:59:00 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
-[11-Mar-25 17:59:01 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
-[11-Mar-25 17:59:02 - INFO] - pyrogram.session.auth - Start creating a new auth key on DC2
-[11-Mar-25 17:59:02 - INFO] - pyrogram.connection.connection - Connecting...
-[11-Mar-25 17:59:02 - INFO] - pyrogram.connection.connection - Connected! Production DC2 - IPv4
-[11-Mar-25 17:59:03 - INFO] - pyrogram.session.auth - Done auth key exchange: DhGenOk
-[11-Mar-25 17:59:03 - INFO] - pyrogram.connection.connection - Disconnected
-[11-Mar-25 17:59:03 - INFO] - pyrogram.connection.connection - Connecting...
-[11-Mar-25 17:59:03 - INFO] - pyrogram.connection.connection - Connected! Production DC2 - IPv4
-[11-Mar-25 17:59:03 - INFO] - pyrogram.session.session - NetworkTask started
-[11-Mar-25 17:59:03 - INFO] - pyrogram.session.session - Session initialized: Layer 158
-[11-Mar-25 17:59:03 - INFO] - pyrogram.session.session - Device: CPython 3.8.10 - Pyrogram 2.0.106
-[11-Mar-25 17:59:03 - INFO] - pyrogram.session.session - System: Linux 5.4.0-172-generic (en)
-[11-Mar-25 17:59:03 - INFO] - pyrogram.session.session - Session started
-[11-Mar-25 17:59:03 - INFO] - pyrogram.session.session - PingTask started
-[11-Mar-25 17:59:03 - INFO] - pyrogram.session.session - PingTask stopped
-[11-Mar-25 17:59:03 - INFO] - pyrogram.connection.connection - Disconnected
-[11-Mar-25 17:59:03 - INFO] - pyrogram.session.session - NetworkTask stopped
-[11-Mar-25 17:59:03 - INFO] - pyrogram.session.session - Session stopped
-[11-Mar-25 17:59:03 - INFO] - pyrogram.session.auth - Start creating a new auth key on DC4
-[11-Mar-25 17:59:03 - INFO] - pyrogram.connection.connection - Connecting...
-[11-Mar-25 17:59:03 - INFO] - pyrogram.connection.connection - Connected! Production DC4 - IPv4
-[11-Mar-25 17:59:04 - INFO] - pyrogram.session.auth - Done auth key exchange: DhGenOk
-[11-Mar-25 17:59:04 - INFO] - pyrogram.connection.connection - Disconnected
-[11-Mar-25 17:59:04 - INFO] - pyrogram.connection.connection - Connecting...
-[11-Mar-25 17:59:04 - INFO] - pyrogram.connection.connection - Connected! Production DC4 - IPv4
-[11-Mar-25 17:59:04 - INFO] - pyrogram.session.session - NetworkTask started
-[11-Mar-25 17:59:05 - INFO] - pyrogram.session.session - Session initialized: Layer 158
-[11-Mar-25 17:59:05 - INFO] - pyrogram.session.session - Device: CPython 3.8.10 - Pyrogram 2.0.106
-[11-Mar-25 17:59:05 - INFO] - pyrogram.session.session - System: Linux 5.4.0-172-generic (en)
-[11-Mar-25 17:59:05 - INFO] - pyrogram.session.session - Session started
-[11-Mar-25 17:59:05 - INFO] - pyrogram.session.session - PingTask started
-[11-Mar-25 17:59:05 - INFO] - pyrogram.dispatcher - Started 6 HandlerTasks
-[11-Mar-25 17:59:05 - WARNING] - pyrogram.methods.advanced.resolve_peer - ⚠️ المعرف غير موجود في قاعدة البيانات: -4658290202
-[11-Mar-25 17:59:05 - WARNING] - pyrogram.methods.advanced.resolve_peer - ⚠️ معرف غير صالح: -4658290202
-[11-Mar-25 17:59:05 - ERROR] - SrcMusicKERO.core.bot - Bot has failed to access the log group/channel.
-  Reason: AttributeError - 'NoneType' object has no attribute 'write'.
-[11-Mar-25 17:59:05 - INFO] - pytgcalls - Node.js stopped
-[11-Mar-25 17:59:05 - INFO] - pytgcalls - Node.js stopped
-[11-Mar-25 17:59:05 - INFO] - pytgcalls - Node.js stopped
-[11-Mar-25 17:59:05 - INFO] - pytgcalls - Node.js stopped
-[11-Mar-25 17:59:05 - INFO] - pytgcalls - Node.js stopped
+[11-Mar-25 18:03:12 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
+[11-Mar-25 18:03:12 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
+[11-Mar-25 18:03:12 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
+[11-Mar-25 18:03:12 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
+[11-Mar-25 18:03:12 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
+[11-Mar-25 18:03:14 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
+[11-Mar-25 18:03:14 - INFO] - pyrogram.session.auth - Start creating a new auth key on DC2
+[11-Mar-25 18:03:14 - INFO] - pyrogram.connection.connection - Connecting...
+[11-Mar-25 18:03:14 - INFO] - pyrogram.connection.connection - Connected! Production DC2 - IPv4
+[11-Mar-25 18:03:15 - INFO] - pyrogram.session.auth - Done auth key exchange: DhGenOk
+[11-Mar-25 18:03:15 - INFO] - pyrogram.connection.connection - Disconnected
+[11-Mar-25 18:03:15 - INFO] - pyrogram.connection.connection - Connecting...
+[11-Mar-25 18:03:15 - INFO] - pyrogram.connection.connection - Connected! Production DC2 - IPv4
+[11-Mar-25 18:03:15 - INFO] - pyrogram.session.session - NetworkTask started
+[11-Mar-25 18:03:15 - INFO] - pyrogram.session.session - Session initialized: Layer 158
+[11-Mar-25 18:03:15 - INFO] - pyrogram.session.session - Device: CPython 3.8.10 - Pyrogram 2.0.106
+[11-Mar-25 18:03:15 - INFO] - pyrogram.session.session - System: Linux 5.4.0-172-generic (en)
+[11-Mar-25 18:03:15 - INFO] - pyrogram.session.session - Session started
+[11-Mar-25 18:03:15 - INFO] - pyrogram.session.session - PingTask started
+[11-Mar-25 18:03:15 - INFO] - pyrogram.session.session - PingTask stopped
+[11-Mar-25 18:03:15 - INFO] - pyrogram.connection.connection - Disconnected
+[11-Mar-25 18:03:15 - INFO] - pyrogram.session.session - NetworkTask stopped
+[11-Mar-25 18:03:15 - INFO] - pyrogram.session.session - Session stopped
+[11-Mar-25 18:03:15 - INFO] - pyrogram.session.auth - Start creating a new auth key on DC4
+[11-Mar-25 18:03:15 - INFO] - pyrogram.connection.connection - Connecting...
+[11-Mar-25 18:03:15 - INFO] - pyrogram.connection.connection - Connected! Production DC4 - IPv4
+[11-Mar-25 18:03:16 - INFO] - pyrogram.session.auth - Done auth key exchange: DhGenOk
+[11-Mar-25 18:03:16 - INFO] - pyrogram.connection.connection - Disconnected
+[11-Mar-25 18:03:16 - INFO] - pyrogram.connection.connection - Connecting...
+[11-Mar-25 18:03:17 - INFO] - pyrogram.connection.connection - Connected! Production DC4 - IPv4
+[11-Mar-25 18:03:17 - INFO] - pyrogram.session.session - NetworkTask started
+[11-Mar-25 18:03:17 - INFO] - pyrogram.session.session - Session initialized: Layer 158
+[11-Mar-25 18:03:17 - INFO] - pyrogram.session.session - Device: CPython 3.8.10 - Pyrogram 2.0.106
+[11-Mar-25 18:03:17 - INFO] - pyrogram.session.session - System: Linux 5.4.0-172-generic (en)
+[11-Mar-25 18:03:17 - INFO] - pyrogram.session.session - Session started
+[11-Mar-25 18:03:17 - INFO] - pyrogram.session.session - PingTask started
+[11-Mar-25 18:03:17 - INFO] - pyrogram.dispatcher - Started 6 HandlerTasks
+[11-Mar-25 18:03:17 - WARNING] - pyrogram.methods.advanced.resolve_peer - ⚠️ المعرف غير موجود في قاعدة البيانات: -1002071277392
+[11-Mar-25 18:03:17 - ERROR] - SrcMusicKERO.core.bot - Bot has failed to access the log group/channel.
+  Reason: AttributeError - 'str' object has no attribute 'write'.
+[11-Mar-25 18:03:17 - INFO] - pytgcalls - Node.js stopped
+[11-Mar-25 18:03:17 - INFO] - pytgcalls - Node.js stopped
+[11-Mar-25 18:03:17 - INFO] - pytgcalls - Node.js stopped
+[11-Mar-25 18:03:17 - INFO] - pytgcalls - Node.js stopped
+[11-Mar-25 18:03:17 - INFO] - pytgcalls - Node.js stopped
