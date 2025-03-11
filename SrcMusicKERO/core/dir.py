@@ -1,15 +1,9 @@
 import os
-
 from ..logging import LOGGER
-
 
 def dirr():
     for file in os.listdir():
-        if file.endswith(".jpg"):
-            os.remove(file)
-        elif file.endswith(".jpeg"):
-            os.remove(file)
-        elif file.endswith(".png"):
+        if file.endswith((".jpg", ".jpeg", ".png")):
             os.remove(file)
 
     if "downloads" not in os.listdir():
@@ -17,4 +11,4 @@ def dirr():
     if "cache" not in os.listdir():
         os.mkdir("cache")
 
-    LOGGER("ميوزك اليــكس").info("تم تحـديث السـورس ...✓")
+    LOGGER.info("تم تحـديث السـورس ...✓")
