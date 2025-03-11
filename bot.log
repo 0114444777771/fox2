@@ -1,0 +1,10 @@
+[11-Mar-25 16:01:44 - INFO] - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
+[11-Mar-25 16:01:44 - INFO] - ميوزك فوكس - تم الاتصـال بقاعـدة البيانـات ...✓
+[11-Mar-25 16:01:44 - INFO] - ميوزك اليــكس - تم تحـديث السـورس ...✓
+[11-Mar-25 16:01:44 - INFO] - ميوزك فوكس - تم تحديث قاعدة بيانات البوت ...✓
+[11-Mar-25 16:01:44 - INFO] - ميوزك الــيكـس - جارِ بدء تشغيل البوت . . .
+[11-Mar-25 16:01:46 - INFO] - ميوزك فوكس - تم تحميل قائمة مطورين البوت ...✓
+[11-Mar-25 16:01:49 - WARNING] - pyrogram.methods.advanced.resolve_peer - ⚠️ المعرف غير موجود في قاعدة البيانات: -4658290202
+[11-Mar-25 16:01:49 - WARNING] - pyrogram.methods.advanced.resolve_peer - ⚠️ معرف غير صالح: -4658290202
+[11-Mar-25 16:01:49 - ERROR] - SrcMusicKERO.core.bot - Bot has failed to access the log group/channel.
+  Reason: AttributeError - 'NoneType' object has no attribute 'write'.
