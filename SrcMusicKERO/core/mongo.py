@@ -10,5 +10,5 @@ try:
     mongodb = _mongo_async_.myDatabase
     LOGGER("ميوزك فوكس").info("تم الاتصـال بقاعـدة البيانـات ...✓")
 except:
-    LOGGER(__name__).error("حدث خطأ اثناء الاتصال بقاعدة البيانات.")
+    LOGGER.error("حدث خطأ اثناء الاتصال بقاعدة البيانات.")
     exit()
