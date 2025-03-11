@@ -149,3 +149,49 @@
 [11-Mar-25 18:59:56 - INFO] - pytgcalls - Node.js stopped
 [11-Mar-25 18:59:56 - INFO] - pytgcalls - Node.js stopped
 [11-Mar-25 18:59:56 - INFO] - pytgcalls - Node.js stopped
+[11-Mar-25 19:28:07 - INFO] - BotLogger - Logger has been initialized successfully!
+[11-Mar-25 19:28:08 - INFO] - BotLogger - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
+[11-Mar-25 19:28:08 - INFO] - BotLogger - تم الاتصـال بقاعـدة البيانـات ...✓
+[11-Mar-25 19:28:08 - INFO] - BotLogger - تم تحـديث السـورس ...✓
+[11-Mar-25 19:28:08 - INFO] - BotLogger - تم تحديث قاعدة بيانات البوت ...✓
+[11-Mar-25 19:28:08 - INFO] - BotLogger - ميوزك اليــكس - جارِ بدء تشغيل البوت . . .
+[11-Mar-25 19:28:09 - INFO] - BotLogger - تم تحميل قائمة مطورين البوت ...✓
+[11-Mar-25 19:28:10 - INFO] - pyrogram.session.auth - Start creating a new auth key on DC2
+[11-Mar-25 19:28:10 - INFO] - pyrogram.connection.connection - Connecting...
+[11-Mar-25 19:28:10 - INFO] - pyrogram.connection.connection - Connected! Production DC2 - IPv4
+[11-Mar-25 19:28:11 - INFO] - pyrogram.session.auth - Done auth key exchange: DhGenOk
+[11-Mar-25 19:28:11 - INFO] - pyrogram.connection.connection - Disconnected
+[11-Mar-25 19:28:11 - INFO] - pyrogram.connection.connection - Connecting...
+[11-Mar-25 19:28:11 - INFO] - pyrogram.connection.connection - Connected! Production DC2 - IPv4
+[11-Mar-25 19:28:11 - INFO] - pyrogram.session.session - NetworkTask started
+[11-Mar-25 19:28:11 - INFO] - pyrogram.session.session - Session initialized: Layer 158
+[11-Mar-25 19:28:11 - INFO] - pyrogram.session.session - Device: CPython 3.8.10 - Pyrogram 2.0.106
+[11-Mar-25 19:28:11 - INFO] - pyrogram.session.session - System: Linux 5.4.0-172-generic (en)
+[11-Mar-25 19:28:11 - INFO] - pyrogram.session.session - Session started
+[11-Mar-25 19:28:11 - INFO] - pyrogram.session.session - PingTask started
+[11-Mar-25 19:28:11 - INFO] - pyrogram.session.session - PingTask stopped
+[11-Mar-25 19:28:11 - INFO] - pyrogram.connection.connection - Disconnected
+[11-Mar-25 19:28:11 - INFO] - pyrogram.session.session - NetworkTask stopped
+[11-Mar-25 19:28:11 - INFO] - pyrogram.session.session - Session stopped
+[11-Mar-25 19:28:11 - INFO] - pyrogram.session.auth - Start creating a new auth key on DC4
+[11-Mar-25 19:28:11 - INFO] - pyrogram.connection.connection - Connecting...
+[11-Mar-25 19:28:11 - INFO] - pyrogram.connection.connection - Connected! Production DC4 - IPv4
+[11-Mar-25 19:28:12 - INFO] - pyrogram.session.auth - Done auth key exchange: DhGenOk
+[11-Mar-25 19:28:12 - INFO] - pyrogram.connection.connection - Disconnected
+[11-Mar-25 19:28:12 - INFO] - pyrogram.connection.connection - Connecting...
+[11-Mar-25 19:28:12 - INFO] - pyrogram.connection.connection - Connected! Production DC4 - IPv4
+[11-Mar-25 19:28:12 - INFO] - pyrogram.session.session - NetworkTask started
+[11-Mar-25 19:28:12 - INFO] - pyrogram.session.session - Session initialized: Layer 158
+[11-Mar-25 19:28:12 - INFO] - pyrogram.session.session - Device: CPython 3.8.10 - Pyrogram 2.0.106
+[11-Mar-25 19:28:12 - INFO] - pyrogram.session.session - System: Linux 5.4.0-172-generic (en)
+[11-Mar-25 19:28:12 - INFO] - pyrogram.session.session - Session started
+[11-Mar-25 19:28:12 - INFO] - pyrogram.session.session - PingTask started
+[11-Mar-25 19:28:12 - INFO] - pyrogram.dispatcher - Started 6 HandlerTasks
+[11-Mar-25 19:28:13 - WARNING] - pyrogram.methods.advanced.resolve_peer - ⚠️ المعرف غير موجود في قاعدة البيانات: -1002071277392
+[11-Mar-25 19:28:13 - ERROR] - BotLogger - Bot has failed to access the log group/channel.
+  Reason: AttributeError - 'str' object has no attribute 'write'.
+[11-Mar-25 19:28:13 - INFO] - pytgcalls - Node.js stopped
+[11-Mar-25 19:28:13 - INFO] - pytgcalls - Node.js stopped
+[11-Mar-25 19:28:13 - INFO] - pytgcalls - Node.js stopped
+[11-Mar-25 19:28:13 - INFO] - pytgcalls - Node.js stopped
+[11-Mar-25 19:28:13 - INFO] - pytgcalls - Node.js stopped
