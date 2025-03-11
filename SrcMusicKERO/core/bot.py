@@ -3,7 +3,7 @@ from pyrogram import Client, errors
 from pyrogram.enums import ChatMemberStatus, ParseMode
 
 import config
-from ..logging import LOGGER  # تأكد أن LOGGER معرّف ككائن logging.Logger
+from ..logging import LOGGER  # تأكد أن LOGGER هو كائن logging.Logger
 
 class Zelzaly(Client):
     def __init__(self):
