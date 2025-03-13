@@ -5,212 +5,245 @@ import re
 import string
 from pyrogram.types import Message
 from pyrogram import filters, Client
-from pyrogram.types import (InlineKeyboardButton,CallbackQuery,InlineKeyboardMarkup, Message)
+from pyrogram.types import (InlineKeyboardButton, CallbackQuery, InlineKeyboardMarkup)
 from SrcMusicKERO import app
 
-#استارت
-@app.on_message(
-    filters.command(["الاوامر"],""))
+# استارت
+@app.on_message(filters.command(["الاوامر"], ""))
 async def italy(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://envs.sh/S7N.webp",
-        caption=f"""*hey my dear in my source TiHs Is A GrEAt SoUrCe In TElE GrAMe* {message.from_user.mention}
-     
+        caption=f"""*مرحبًا {message.from_user.mention} 🌟*
 
+أهلاً بك في **سورس Titanx** الرائع! إليك قائمة الأوامر التي يمكنك استخدامها:
+
+📝 **أوامر المجموعات**:
+- لتشغيل الأغاني: *تشغيل* أو *شغل* 🎶
+- لتشغيل الفيديو: *فيديو* 🎥
+- لإيقاف الأغنية الحالية: *ايقاف* أو *انهاء* ⏸️
+- لتخطي الأغنية: *تخطي* ⏩
+
+🔧 **أوامر القنوات**:
+- لتشغيل الأغاني في القناة: *تشغيل* أو *شغل* 🎧
+- لإيقاف الأغنية في القناة: *ايقاف* أو *انهاء* 🚫
+
+🤖 **أوامر البوت**:
+- لعرض إحصائيات البوت: *الإحصائيات* 📊
+- للتحكم في لغة البوت: *اللغة* 🌐
+
+🌟 **مميزات السورس**:
+- لعرض كليشة السورس: *سورس* 💡
+- لعرض معلومات عن البوت: *بوت* 🤖
+
+🔒 **أوامر أخرى**:
+- لتغيير الإعدادات: *الإعدادات* ⚙️
+- لمعرفة معلومات شخص: *كشف* 🕵️‍♂️
 
 ▰▰▰▰▰▰▰▰▰▰▰▰▰
- اليك قائمة اوامر سورس ميوزك Titanx
-»»»»»»  SouRce Titanx «««««« .
-么 ← اوامـر الـمـجـمـوعـات .
-么 ← اوامـر الـقـنـوات .
-么 ← اوامـر الـبـوت .
-么 ← مميزات السورس .
-▰▰▰▰▰▰▰▰▰▰▰▰▰""",
+اضغط على الأزرار أدناه لاختيار المزيد من الخيارات 📲""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                      InlineKeyboardButton(
-                        "GrOuP", callback_data=f"italygro"),
                     InlineKeyboardButton(
-                        "ChaNll", callback_data=f"italycha"),
-                ],[
-                InlineKeyboardButton(
-                        "BoT", callback_data=f"italybot"),
-                ],[
-                InlineKeyboardButton(
-                        "SouRce", callback_data=f"italysou"),
-                ],[
+                        "أوامر المجموعات 🏠", callback_data=f"italygro"),
                     InlineKeyboardButton(
-                        "program", callback_data=f"italydev"),
-                ],[
+                        "أوامر القنوات 📡", callback_data=f"italycha"),
+                ],
+                [
                     InlineKeyboardButton(
-                        "clOse", callback_data=f"close"),
-               ],
+                        "أوامر البوت 🤖", callback_data=f"italybot"),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "مميزات السورس 💎", callback_data=f"italysou"),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "مطور البرنامج 👨‍💻", callback_data=f"italydev"),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "إغلاق ❌", callback_data=f"close"),
+                ],
             ]
         ),
     )
-#كول باك اوامر المجموعه
+
+# كول باك أوامر المجموعه
 @app.on_callback_query(filters.regex("italygro"))
 async def italy(_, query: CallbackQuery):
-   await query.edit_message_caption(caption =f"""✅ **اليك قائمة اوامر المجموعات ♬**
+   await query.edit_message_caption(caption=f"""✅ **اليك قائمة أوامر المجموعات ♬**
 ❅─────✧❅✦❅✧─────❅
 ▰▰▰▰▰▰▰▰▰▰▰▰
-
-么 ← لتشغيل اغنيه اكتب : تشغيل او شغل
-么 ← لتشغيل فيديو اكتب : فيديو 
-么 ← لأنهاء الاغنيه اكتب : ايقاف او انهاء 
-么 ←لتخطي الاغنيه اكتب : تخطي .**
-么 ←اذا حدث خطأ او اعادة التشغيل اكتب 
+- لتشغيل أغنية اكتب: *تشغيل* أو *شغل* 🎶
+- لتشغيل فيديو اكتب: *فيديو* 🎥
+- لإنهاء الأغنية اكتب: *ايقاف* أو *انهاء* ⏸️
+- لتخطي الأغنية اكتب: *تخطي* ⏩
+- إذا حدث خطأ أو لإعادة التشغيل اكتب: */restart* 🔄
 ▰▰▰▰▰▰▰▰▰▰▰▰
-❅─────✧❅✦❅✧─────❅:** /restart .""",
+❅─────✧❅✦❅✧─────❅""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                      InlineKeyboardButton(
-                        "ChaNll", callback_data=f"italycha"),
                     InlineKeyboardButton(
-                        "BoT", callback_data=f"italybot"),
-                ],[
-                InlineKeyboardButton(
-                        "SouRce", callback_data=f"italysou"),
-                ],[
+                        "أوامر القنوات 📡", callback_data=f"italycha"),
                     InlineKeyboardButton(
-                        "ProGram", callback_data=f"italydev"),
-                ],[
+                        "أوامر البوت 🤖", callback_data=f"italybot"),
+                ],
+                [
                     InlineKeyboardButton(
-                        "ClosE", callback_data=f"close"),
-               ],
+                        "مميزات السورس 💎", callback_data=f"italysou"),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "مطور البرنامج 👨‍💻", callback_data=f"italydev"),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "إغلاق ❌", callback_data=f"close"),
+                ],
             ]
         ),
     )
-#كول باك اوامر القناه
+
+# كول باك أوامر القناه
 @app.on_callback_query(filters.regex("italycha"))
 async def italy(_, query: CallbackQuery):
-   await query.edit_message_caption(caption =f"""✅ **اليك قائمة اوامر الـقـنـوات ♬**
+   await query.edit_message_caption(caption=f"""✅ **اليك قائمة أوامر القنوات ♬**
 ▰▰▰▰▰▰▰▰▰▰▰▰
-么 ←لتشغيل اغنيه اكتب : تشغيل او شغل 
-么 ←لتشغيل فيديو اكتب : فيديو 
-么 ← لأنهاء الاغنيه اكتب : ايقاف او انهاء 
-么 ← لتخطي الاغنيه اكتب : تخطي 
-么 ←اذا حدث خطأ او اعادة التشغيل اكتب 
-▰▰▰▰▰▰▰▰▰▰▰▰:** /restart .""",
+- لتشغيل أغنية اكتب: *تشغيل* أو *شغل* 🎶
+- لتشغيل فيديو اكتب: *فيديو* 🎥
+- لإنهاء الأغنية اكتب: *ايقاف* أو *انهاء* ⏸️
+- لتخطي الأغنية اكتب: *تخطي* ⏩
+- إذا حدث خطأ أو لإعادة التشغيل اكتب: */restart* 🔄
+▰▰▰▰▰▰▰▰▰▰▰▰""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                      InlineKeyboardButton(
-                        "GroUp", callback_data=f"italygro"),
                     InlineKeyboardButton(
-                        "BoT", callback_data=f"italybot"),
-                ],[
-                InlineKeyboardButton(
-                        "SouRce", callback_data=f"italysou"),
-                ],[
+                        "أوامر المجموعات 🏠", callback_data=f"italygro"),
                     InlineKeyboardButton(
-                        "ProGram", callback_data=f"italydev"),
-                ],[
+                        "أوامر البوت 🤖", callback_data=f"italybot"),
+                ],
+                [
                     InlineKeyboardButton(
-                        "CloSe", callback_data=f"close"),
-               ],
+                        "مميزات السورس 💎", callback_data=f"italysou"),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "مطور البرنامج 👨‍💻", callback_data=f"italydev"),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "إغلاق ❌", callback_data=f"close"),
+                ],
             ]
         ),
     )
-#كول باك اوامر البوت
+
+# كول باك أوامر البوت
 @app.on_callback_query(filters.regex("italybot"))
 async def italy(_, query: CallbackQuery):
-   await query.edit_message_caption(caption =f"""✅ **اليك قائمة اوامر الـبـوت ♬**
+   await query.edit_message_caption(caption=f"""✅ **اليك قائمة أوامر البوت ♬**
 ▰▰▰▰▰▰▰▰▰▰▰▰
-
-么عمل اذاعه في البوت قم برد علي الاذاعه واكتب : اذاعه 
-么عرض احصائيات البوت اكتب : الاحصائيات 
-么عرض سرعه البوت اكتب : بينج 
-么للتحكم في لغه البوت اكتب : اللغه 
-么للتحكم في وضع التشغيل اكتب : الاعدادات 
-么اوامر الحظر والرفع في كيبورد المطور 
-▰▰▰▰▰▰▰▰▰▰▰▰.**""",
+- لعمل إذاعة في البوت: *إذاعة* 📢
+- لعرض إحصائيات البوت: *الإحصائيات* 📊
+- لعرض سرعة البوت: *بينج* ⏱️
+- للتحكم في لغة البوت: *اللغة* 🌐
+- للتحكم في إعدادات التشغيل: *الإعدادات* ⚙️
+- لأوامر الحظر والرفع في كيبورد المطور
+▰▰▰▰▰▰▰▰▰▰▰▰""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                      InlineKeyboardButton(
-                        "GrouP", callback_data=f"italygro"),
                     InlineKeyboardButton(
-                        "ChaNll", callback_data=f"italycha"),
-                ],[
-                InlineKeyboardButton(
-                        "SouRce", callback_data=f"italysou"),
-                ],[
+                        "أوامر المجموعات 🏠", callback_data=f"italygro"),
                     InlineKeyboardButton(
-                        "ProGram", callback_data=f"italydev"),
-                ],[
+                        "أوامر القنوات 📡", callback_data=f"italycha"),
+                ],
+                [
                     InlineKeyboardButton(
-                        "Close", callback_data=f"close"),
-               ],
+                        "مميزات السورس 💎", callback_data=f"italysou"),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "مطور البرنامج 👨‍💻", callback_data=f"italydev"),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "إغلاق ❌", callback_data=f"close"),
+                ],
             ]
         ),
     )
-#كول باك اوامر مميزات السورس
+
+# كول باك أوامر مميزات السورس
 @app.on_callback_query(filters.regex("italysou"))
 async def italy(_, query: CallbackQuery):
-   await query.edit_message_caption(caption =f"""✅ **اليك قائمة اوامر سورس Titanx ♬**
-   المس الامر لنسخ والاستخدام
+   await query.edit_message_caption(caption=f"""✅ **اليك قائمة مميزات سورس Titanx ♬**
 ▰▰▰▰▰▰▰▰▰▰▰▰
-- لعرض كليشه السورس اكتب : سورس .
-- لعرض مين في الكول اليك الامر  : مين في الكول .
-- لزخرفه عربي او انجلش اكتب  : فه واسم الزخرفه مثال زخرفه hossam . .
-- لعرض بوت الحذف اكتب   : بوت حذف .
-- لعمل كت او تويت اليك الامر  : كت او تويت .
-- لعرض مطور البوت اكتب : المطور .
-- لعرض اسم البوت اكتب : بوت .
-- لعرض الايدي الخاص بك في الجروب او البرايفت اكتب : ا او ايدي .
-- لصناعة رابط تليجراف ارسل الصوره برد عليه : تليجراف .
-- لعرض لينك الجروب ارسل : لينك او رابط .
-- لطباعة صوره علي التريمنال ارسل الرساله انجليزي برد عليه : طباعه .
-- لترجمة نص مثال : /tr ar Alex
-- لتحويل ملصق الي صورة قم برد علي الملصق : pict .
-- لتحويل الصوره الي ملصق قم برد علي الملصق : stik .
-- لعرض كود الملصق قم برد علي الملصق : code .
-- لعرض اسمك اكتب : اسمي .
-- لمعرفة معلومات شخص قم برد عليه : كشف .
-- لعمل تاك للاعضاء استخدم امر : تاك .
-**- لايقاف تاك للاعضاء استخدم امر
- الاغنيه اكتب : تخطي .**
-么 ←اذا حدث خطأ او اعادة التشغيل اكتب 
-▰▰▰▰▰▰▰▰▰▰▰▰:** `/cancel` .""",
+- لعرض كليشة السورس: *سورس* 💡
+- لعرض مين في الكول: *مين في الكول* 🧑‍🤝‍🧑
+- لزخرفة النصوص: *زخرفه* ✨
+- لعرض بوت الحذف: *بوت حذف* 🗑️
+- لصناعة رابط تليجراف: *تليجراف* 🌐
+- لتحويل الملصق لصورة: *Pict* 🖼️
+- لتحويل الصورة لملصق: *Stik* 🏷️
+▰▰▰▰▰▰▰▰▰▰▰▰
+❅─────✧❅✦❅✧─────❅""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                      InlineKeyboardButton(
-                        "GroUp", callback_data=f"italygro"),
-                    InlineKeyboardButton(
-                        "ChaNll", callback_data=f"italycha"),
-                ],[
-                InlineKeyboardButton(
-                        "BoT", callback_data=f"italybot"),
-                ],[
-                    InlineKeyboardButton(
-                        "PrOgraM", callback_data=f"italydev"),
-                ],[
-                    InlineKeyboardButton(
-                        "CloSe", callback_data=f"close"),
-               ],
+                    InlineKeyboardButton("أوامر المجموعات 🏠", callback_data="italygro"),
+                    InlineKeyboardButton("أوامر القنوات 📡", callback_data="italycha"),
+                ],
+                [
+                    InlineKeyboardButton("أوامر البوت 🤖", callback_data="italybot"),
+                ],
+                [
+                    InlineKeyboardButton("مطور البرنامج 👨‍💻", callback_data="italydev"),
+                ],
+                [
+                    InlineKeyboardButton("إغلاق ❌", callback_data="close"),
+                ],
             ]
         ),
     )
-#كول باك المطورين
+
+# كول باك مطور البرنامج
 @app.on_callback_query(filters.regex("italydev"))
-async def ayamr(_, query: CallbackQuery):
-   await query.edit_message_caption(caption =f"""
-[♡]This is my support group @PX_CBL
-[♡]This is my program @PX_CBL  
-""",
+async def italy(_, query: CallbackQuery):
+   await query.edit_message_caption(caption=f"""✅ **مطور البرنامج:**
+▰▰▰▰▰▰▰▰▰▰▰▰
+- المطور: **@F_o_x_5** 🧑‍💻
+- الدعم الفني: **@Support_Channel** 📩
+- لمزيد من المعلومات، تواصل مع المطور مباشرة! 📬
+▰▰▰▰▰▰▰▰▰▰▰▰
+❅─────✧❅✦❅✧─────❅""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("𝗗𝗲𝘃", url=f"https://t.me/Fox4566"), 
-                ],[               
-                    InlineKeyboardButton(
-                        "CloSe", callback_data=f"close"),
-               ],
+                    InlineKeyboardButton("أوامر المجموعات 🏠", callback_data="italygro"),
+                    InlineKeyboardButton("أوامر القنوات 📡", callback_data="italycha"),
+                ],
+                [
+                    InlineKeyboardButton("أوامر البوت 🤖", callback_data="italybot"),
+                ],
+                [
+                    InlineKeyboardButton("مميزات السورس 💎", callback_data="italysou"),
+                ],
+                [
+                    InlineKeyboardButton("إغلاق ❌", callback_data="close"),
+                ],
             ]
         ),
     )
-    
+
+# كول باك إغلاق
+@app.on_callback_query(filters.regex("close"))
+async def close(_, query: CallbackQuery):
+    await query.message.delete()
+
+# تشغيل البوت
+if __name__ == "__main__":
+    app.run()
