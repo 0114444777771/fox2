@@ -21,8 +21,9 @@ async def init():
         and not config.STRING4
         and not config.STRING5
     ):
-        LOGGER(__name__).error("كود جلسة الحساب المساعد غير مدعوم ...")
+        LOGGER.error("كود جلسة الحساب المساعد غير مدعوم ...")
         exit()
+
     await sudo()
     try:
         users = await get_gbanned()
@@ -31,29 +32,39 @@ async def init():
         users = await get_banned_users()
         for user_id in users:
             BANNED_USERS.add(user_id)
-    except:
-        pass
+    except Exception as e:
+        LOGGER.warning(f"حدث خطأ أثناء جلب المستخدمين المحظورين: {e}")
+
     await app.start()
+    
     for all_module in ALL_MODULES:
-        importlib.import_module("SrcMusicKERO.plugins" + all_module)
-    LOGGER("ميوزك فوكس").info("تم تحميل الاضافات ...✓")
+        importlib.import_module(f"SrcMusicKERO.plugins.{all_module}")
+
+    LOGGER.info("تم تحميل الإضافات ...✓")
+
     await userbot.start()
     await Zelzaly.start()
+
     try:
         await Zelzaly.stream_call("https://telegra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
-        LOGGER("ميوزك فوكس").info(
-            "خطأ .. قم بفتح المكالمة في مجموعة السجل الخاصه بك\n\nجارِ ايقاف بوت الميوزك . . ."
+        LOGGER.info(
+            "خطأ .. قم بفتح المكالمة في مجموعة السجل الخاصة بك\n\nجارِ إيقاف بوت الميوزك . . ."
         )
         exit()
-    except:
-        pass
+    except Exception as e:
+        LOGGER.warning(f"حدث خطأ أثناء تشغيل المكالمة الصوتية: {e}")
+
     await Zelzaly.decorators()
-    LOGGER("ميوزك فوكس").info("TmLotus")
+
+    LOGGER.info("البوت يعمل بنجاح ✅")
+
     await idle()
+
     await app.stop()
     await userbot.stop()
-    LOGGER("ميوزك فوكس").info("جارِ ايقاف بوت الميوزك . . .")
+
+    LOGGER.info("جارِ إيقاف بوت الميوزك . . .")
 
 
 if __name__ == "__main__":
