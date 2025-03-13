@@ -195,3 +195,58 @@
 [11-Mar-25 19:28:13 - INFO] - pytgcalls - Node.js stopped
 [11-Mar-25 19:28:13 - INFO] - pytgcalls - Node.js stopped
 [11-Mar-25 19:28:13 - INFO] - pytgcalls - Node.js stopped
+[13-Mar-25 18:54:20 - INFO] - BotLogger - Logger has been initialized successfully!
+[13-Mar-25 18:54:20 - INFO] - BotLogger - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
+[13-Mar-25 18:54:20 - INFO] - BotLogger - تم الاتصـال بقاعـدة البيانـات ...✓
+[13-Mar-25 18:54:20 - INFO] - BotLogger - تم تحـديث السـورس ...✓
+[13-Mar-25 18:54:20 - INFO] - BotLogger - تم تحديث قاعدة بيانات البوت ...✓
+[13-Mar-25 18:54:20 - INFO] - BotLogger - ميوزك اليــكس - جارِ بدء تشغيل البوت . . .
+[13-Mar-25 18:54:51 - INFO] - pytgcalls - Node.js stopped
+[13-Mar-25 18:54:51 - INFO] - pytgcalls - Node.js stopped
+[13-Mar-25 18:54:51 - INFO] - pytgcalls - Node.js stopped
+[13-Mar-25 18:54:51 - INFO] - pytgcalls - Node.js stopped
+[13-Mar-25 18:54:51 - INFO] - pytgcalls - Node.js stopped
+[13-Mar-25 19:15:13 - INFO] - BotLogger - Logger has been initialized successfully!
+[13-Mar-25 19:15:13 - INFO] - BotLogger - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
+[13-Mar-25 19:15:13 - INFO] - BotLogger - تم الاتصـال بقاعـدة البيانـات ...✓
+[13-Mar-25 19:15:13 - INFO] - BotLogger - تم تحـديث السـورس ...✓
+[13-Mar-25 19:15:13 - INFO] - BotLogger - تم تحديث قاعدة بيانات البوت ...✓
+[13-Mar-25 19:15:13 - INFO] - BotLogger - ميوزك اليــكس - جارِ بدء تشغيل البوت . . .
+[13-Mar-25 19:15:15 - INFO] - BotLogger - تم تحميل قائمة مطورين البوت ...✓
+[13-Mar-25 19:15:15 - INFO] - pyrogram.session.auth - Start creating a new auth key on DC2
+[13-Mar-25 19:15:15 - INFO] - pyrogram.connection.connection - Connecting...
+[13-Mar-25 19:15:15 - INFO] - pyrogram.connection.connection - Connected! Production DC2 - IPv4
+[13-Mar-25 19:15:16 - INFO] - pyrogram.session.auth - Done auth key exchange: DhGenOk
+[13-Mar-25 19:15:16 - INFO] - pyrogram.connection.connection - Disconnected
+[13-Mar-25 19:15:16 - INFO] - pyrogram.connection.connection - Connecting...
+[13-Mar-25 19:15:16 - INFO] - pyrogram.connection.connection - Connected! Production DC2 - IPv4
+[13-Mar-25 19:15:16 - INFO] - pyrogram.session.session - NetworkTask started
+[13-Mar-25 19:15:16 - INFO] - pyrogram.session.session - Session initialized: Layer 158
+[13-Mar-25 19:15:16 - INFO] - pyrogram.session.session - Device: CPython 3.9.21 - Pyrogram 2.0.106
+[13-Mar-25 19:15:16 - INFO] - pyrogram.session.session - System: Linux 5.4.0-208-generic (en)
+[13-Mar-25 19:15:16 - INFO] - pyrogram.session.session - Session started
+[13-Mar-25 19:15:16 - INFO] - pyrogram.session.session - PingTask started
+[13-Mar-25 19:15:16 - INFO] - pyrogram.session.session - PingTask stopped
+[13-Mar-25 19:15:16 - INFO] - pyrogram.connection.connection - Disconnected
+[13-Mar-25 19:15:16 - INFO] - pyrogram.session.session - NetworkTask stopped
+[13-Mar-25 19:15:16 - INFO] - pyrogram.session.session - Session stopped
+[13-Mar-25 19:15:16 - INFO] - pyrogram.session.auth - Start creating a new auth key on DC4
+[13-Mar-25 19:15:16 - INFO] - pyrogram.connection.connection - Connecting...
+[13-Mar-25 19:15:16 - INFO] - pyrogram.connection.connection - Connected! Production DC4 - IPv4
+[13-Mar-25 19:15:18 - INFO] - pyrogram.session.auth - Done auth key exchange: DhGenOk
+[13-Mar-25 19:15:18 - INFO] - pyrogram.connection.connection - Disconnected
+[13-Mar-25 19:15:18 - INFO] - pyrogram.connection.connection - Connecting...
+[13-Mar-25 19:15:18 - INFO] - pyrogram.connection.connection - Connected! Production DC4 - IPv4
+[13-Mar-25 19:15:18 - INFO] - pyrogram.session.session - NetworkTask started
+[13-Mar-25 19:15:18 - INFO] - pyrogram.session.session - Session initialized: Layer 158
+[13-Mar-25 19:15:18 - INFO] - pyrogram.session.session - Device: CPython 3.9.21 - Pyrogram 2.0.106
+[13-Mar-25 19:15:18 - INFO] - pyrogram.session.session - System: Linux 5.4.0-208-generic (en)
+[13-Mar-25 19:15:18 - INFO] - pyrogram.session.session - Session started
+[13-Mar-25 19:15:18 - INFO] - pyrogram.session.session - PingTask started
+[13-Mar-25 19:15:18 - INFO] - pyrogram.dispatcher - Started 6 HandlerTasks
+[13-Mar-25 19:15:18 - INFO] - BotLogger - تم بدء تشغيل البوت Fox ...✓
+[13-Mar-25 19:15:18 - INFO] - pytgcalls - Node.js stopped
+[13-Mar-25 19:15:18 - INFO] - pytgcalls - Node.js stopped
+[13-Mar-25 19:15:18 - INFO] - pytgcalls - Node.js stopped
+[13-Mar-25 19:15:18 - INFO] - pytgcalls - Node.js stopped
+[13-Mar-25 19:15:18 - INFO] - pytgcalls - Node.js stopped
