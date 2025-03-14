@@ -7916,3 +7916,80 @@ pyrogram.errors.exceptions.bad_request_400.PeerIdInvalid: Telegram says: [400 PE
 [14-Mar-25 23:26:46 - INFO] - pytgcalls - Node.js stopped
 [14-Mar-25 23:26:46 - INFO] - pytgcalls - Node.js stopped
 [14-Mar-25 23:26:46 - INFO] - pytgcalls - Node.js stopped
+[14-Mar-25 23:29:48 - INFO] - BotLogger - Logger has been initialized successfully!
+[14-Mar-25 23:29:48 - INFO] - BotLogger - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
+[14-Mar-25 23:29:48 - INFO] - BotLogger - تم الاتصـال بقاعـدة البيانـات ...✓
+[14-Mar-25 23:29:48 - INFO] - BotLogger - تم تحـديث السـورس ...✓
+[14-Mar-25 23:29:48 - INFO] - BotLogger - ✅ تم تحديث قاعدة بيانات البوت بنجاح
+[14-Mar-25 23:29:48 - INFO] - BotLogger - ⚠️ البوت لا يعمل على Heroku، تجاوز إعدادات Heroku
+[14-Mar-25 23:29:48 - INFO] - BotLogger - ميوزك اليــكس - جارِ بدء تشغيل البوت . . .
+[14-Mar-25 23:29:49 - INFO] - BotLogger - ✅ تم تحميل قائمة المطورين (1 شخص)
+[14-Mar-25 23:29:50 - INFO] - pyrogram.session.auth - Start creating a new auth key on DC2
+[14-Mar-25 23:29:50 - INFO] - pyrogram.connection.connection - Connecting...
+[14-Mar-25 23:29:50 - INFO] - pyrogram.connection.connection - Connected! Production DC2 - IPv4
+[14-Mar-25 23:29:51 - INFO] - pyrogram.session.auth - Done auth key exchange: DhGenOk
+[14-Mar-25 23:29:51 - INFO] - pyrogram.connection.connection - Disconnected
+[14-Mar-25 23:29:52 - INFO] - pyrogram.connection.connection - Connecting...
+[14-Mar-25 23:29:52 - INFO] - pyrogram.connection.connection - Connected! Production DC2 - IPv4
+[14-Mar-25 23:29:52 - INFO] - pyrogram.session.session - NetworkTask started
+[14-Mar-25 23:29:52 - INFO] - pyrogram.session.session - Session initialized: Layer 158
+[14-Mar-25 23:29:52 - INFO] - pyrogram.session.session - Device: CPython 3.9.21 - Pyrogram 2.0.106
+[14-Mar-25 23:29:52 - INFO] - pyrogram.session.session - System: Linux 5.4.0-208-generic (en)
+[14-Mar-25 23:29:52 - INFO] - pyrogram.session.session - Session started
+[14-Mar-25 23:29:52 - INFO] - pyrogram.session.session - PingTask started
+[14-Mar-25 23:29:52 - INFO] - pyrogram.session.session - PingTask stopped
+[14-Mar-25 23:29:52 - INFO] - pyrogram.connection.connection - Disconnected
+[14-Mar-25 23:29:52 - INFO] - pyrogram.session.session - NetworkTask stopped
+[14-Mar-25 23:29:52 - INFO] - pyrogram.session.session - Session stopped
+[14-Mar-25 23:29:52 - INFO] - pyrogram.session.auth - Start creating a new auth key on DC4
+[14-Mar-25 23:29:52 - INFO] - pyrogram.connection.connection - Connecting...
+[14-Mar-25 23:29:52 - INFO] - pyrogram.connection.connection - Connected! Production DC4 - IPv4
+[14-Mar-25 23:29:53 - INFO] - pyrogram.session.auth - Done auth key exchange: DhGenOk
+[14-Mar-25 23:29:53 - INFO] - pyrogram.connection.connection - Disconnected
+[14-Mar-25 23:29:53 - INFO] - pyrogram.connection.connection - Connecting...
+[14-Mar-25 23:29:53 - INFO] - pyrogram.connection.connection - Connected! Production DC4 - IPv4
+[14-Mar-25 23:29:53 - INFO] - pyrogram.session.session - NetworkTask started
+[14-Mar-25 23:29:53 - INFO] - pyrogram.session.session - Session initialized: Layer 158
+[14-Mar-25 23:29:53 - INFO] - pyrogram.session.session - Device: CPython 3.9.21 - Pyrogram 2.0.106
+[14-Mar-25 23:29:53 - INFO] - pyrogram.session.session - System: Linux 5.4.0-208-generic (en)
+[14-Mar-25 23:29:53 - INFO] - pyrogram.session.session - Session started
+[14-Mar-25 23:29:53 - INFO] - pyrogram.session.session - PingTask started
+[14-Mar-25 23:29:53 - INFO] - pyrogram.dispatcher - Started 6 HandlerTasks
+[14-Mar-25 23:29:54 - INFO] - BotLogger - تم بدء تشغيل البوت Fox ...✓
+[14-Mar-25 23:29:54 - INFO] - BotLogger - تم تحميل الإضافات ...✓
+[14-Mar-25 23:29:54 - INFO] - BotLogger - جـار تـشـغـيـل الـحـسـابـات الـمـسـاعـدة
+[14-Mar-25 23:29:54 - INFO] - pyrogram.connection.connection - Connecting...
+[14-Mar-25 23:29:54 - ERROR] - BotLogger - فشل تشغيل البوت.
+  السبب: ConnectionError - Client is already connected
+[14-Mar-25 23:29:54 - INFO] - pytgcalls - Node.js stopped
+[14-Mar-25 23:29:54 - INFO] - pytgcalls - Node.js stopped
+[14-Mar-25 23:29:54 - INFO] - pytgcalls - Node.js stopped
+[14-Mar-25 23:29:54 - INFO] - pytgcalls - Node.js stopped
+[14-Mar-25 23:29:54 - INFO] - pytgcalls - Node.js stopped
+[14-Mar-25 23:29:54 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-167' coro=<main() done, defined at /root/fox2/SrcMusicKERO/plugins/play/Source.py:79> exception=SystemExit(1)>
+Traceback (most recent call last):
+  File "/root/fox2/SrcMusicKERO/core/bot.py", line 24, in start
+    await super().start()
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/utilities/start.py", line 58, in start
+    is_authorized = await self.connect()
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/auth/connect.py", line 38, in connect
+    raise ConnectionError("Client is already connected")
+ConnectionError: Client is already connected
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 634, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 601, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 1905, in _run_once
+    handle._run()
+  File "/usr/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/root/fox2/SrcMusicKERO/plugins/play/Source.py", line 80, in main
+    await app.start()
+  File "/root/fox2/SrcMusicKERO/core/bot.py", line 62, in start
+    sys.exit(1)
+SystemExit: 1
