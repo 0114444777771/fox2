@@ -7765,3 +7765,5 @@ pyrogram.errors.exceptions.bad_request_400.PeerIdInvalid: Telegram says: [400 PE
 [14-Mar-25 23:04:36 - INFO] - BotLogger - ✅ تم تحديث قاعدة بيانات البوت بنجاح
 [14-Mar-25 23:04:36 - INFO] - BotLogger - ⚠️ البوت لا يعمل على Heroku، تجاوز إعدادات Heroku
 [14-Mar-25 23:04:36 - INFO] - BotLogger - ميوزك اليــكس - جارِ بدء تشغيل البوت . . .
+[14-Mar-25 23:08:23 - INFO] - BotLogger - Logger has been initialized successfully!
+[14-Mar-25 23:08:30 - INFO] - BotLogger - Logger has been initialized successfully!
