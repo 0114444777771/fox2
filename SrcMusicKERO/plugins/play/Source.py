@@ -1,17 +1,12 @@
 import asyncio
-
 import os
 import time
 import requests
-from config import START_IMG_URL
-from pyrogram import filters
-import random
-from pyrogram import Client
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
-from strings.filters import command
-from SrcMusicKERO import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
+from pyrogram import Client, filters
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
+
+# استيراد السورس والمكتبات الأخرى
 from SrcMusicKERO import app
-from random import  choice, randint
 
 # ⬇️ إرسال صورة السورس
 @app.on_message(filters.command(["✨ سورس", "مطور السورس", "السورس"]))
@@ -79,3 +74,6 @@ async def show_developer_info(client: Client, message: Message):
 @app.on_message(filters.command(["مطور السورس", "alaa", "بودا"]))
 async def show_programmer_info_ahmed(client: Client, message: Message):
     await get_developer_info(client, message, "Loo_la3", "معلومات مبرمج السورس")
+
+# تأكد من تشغيل التطبيق
+app.run()
