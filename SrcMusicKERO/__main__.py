@@ -2,7 +2,7 @@ import asyncio
 import importlib
 
 from pyrogram import idle
-from pytgcalls.exceptions import NoActiveGroupCall
+NoActiveGroupCall = Exception  # مؤقتًا لتجنب الخطأ
 
 import config
 from SrcMusicKERO import LOGGER, app, userbot
