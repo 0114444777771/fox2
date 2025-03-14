@@ -6,7 +6,7 @@ beautifulsoup4==4.12.2
 ffmpeg-python==0.2.0
 gitpython==3.1.32
 hachoir==3.1.2
-heroku3==5.0.3
+heroku3==5.2.1
 lyricsgenius==3.0.1
 motor==3.1.1
 pillow==10.0.0
