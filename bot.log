@@ -172,7 +172,7 @@
 [11-Mar-25 19:28:11 - INFO] - pyrogram.session.session - PingTask stopped
 [11-Mar-25 19:28:11 - INFO] - pyrogram.connection.connection - Disconnected
 [11-Mar-25 19:28:11 - INFO] - pyrogram.session.session - NetworkTask stopped
-[11-Mar-25 19:28:11 - INFO] - pyrogram.session.session - Session stopped
+
 [11-Mar-25 19:28:11 - INFO] - pyrogram.session.auth - Start creating a new auth key on DC4
 [11-Mar-25 19:28:11 - INFO] - pyrogram.connection.connection - Connecting...
 [11-Mar-25 19:28:11 - INFO] - pyrogram.connection.connection - Connected! Production DC4 - IPv4
@@ -7315,3 +7315,439 @@ ValueError: Peer id invalid: -1002332947533
 [14-Mar-25 00:00:09 - INFO] - pytgcalls - Node.js stopped
 [14-Mar-25 00:00:09 - INFO] - pytgcalls - Node.js stopped
 [14-Mar-25 00:00:09 - INFO] - pytgcalls - Node.js stopped
+[14-Mar-25 01:10:24 - INFO] - BotLogger - Logger has been initialized successfully!
+[14-Mar-25 01:10:25 - INFO] - BotLogger - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
+[14-Mar-25 01:10:25 - INFO] - BotLogger - تم الاتصـال بقاعـدة البيانـات ...✓
+[14-Mar-25 01:10:25 - INFO] - BotLogger - تم تحـديث السـورس ...✓
+[14-Mar-25 01:10:25 - INFO] - BotLogger - ✅ تم تحديث قاعدة بيانات البوت بنجاح
+[14-Mar-25 01:10:25 - INFO] - BotLogger - ⚠️ البوت لا يعمل على Heroku، تجاوز إعدادات Heroku
+[14-Mar-25 01:10:25 - INFO] - BotLogger - ميوزك اليــكس - جارِ بدء تشغيل البوت . . .
+[14-Mar-25 01:10:27 - INFO] - BotLogger - ✅ تم تحميل قائمة المطورين (1 شخص)
+[14-Mar-25 01:10:28 - INFO] - pyrogram.session.auth - Start creating a new auth key on DC2
+[14-Mar-25 01:10:28 - INFO] - pyrogram.connection.connection - Connecting...
+[14-Mar-25 01:10:28 - INFO] - pyrogram.connection.connection - Connected! Production DC2 - IPv4
+[14-Mar-25 01:10:29 - INFO] - pyrogram.session.auth - Done auth key exchange: DhGenOk
+[14-Mar-25 01:10:29 - INFO] - pyrogram.connection.connection - Disconnected
+[14-Mar-25 01:10:29 - INFO] - pyrogram.connection.connection - Connecting...
+[14-Mar-25 01:10:29 - INFO] - pyrogram.connection.connection - Connected! Production DC2 - IPv4
+[14-Mar-25 01:10:29 - INFO] - pyrogram.session.session - NetworkTask started
+[14-Mar-25 01:10:29 - INFO] - pyrogram.session.session - Session initialized: Layer 158
+[14-Mar-25 01:10:29 - INFO] - pyrogram.session.session - Device: CPython 3.9.21 - Pyrogram 2.0.106
+[14-Mar-25 01:10:29 - INFO] - pyrogram.session.session - System: Linux 5.4.0-208-generic (en)
+[14-Mar-25 01:10:29 - INFO] - pyrogram.session.session - Session started
+[14-Mar-25 01:10:29 - INFO] - pyrogram.session.session - PingTask started
+[14-Mar-25 01:10:29 - INFO] - pyrogram.session.session - PingTask stopped
+[14-Mar-25 01:10:29 - INFO] - pyrogram.connection.connection - Disconnected
+[14-Mar-25 01:10:29 - INFO] - pyrogram.session.session - NetworkTask stopped
+[14-Mar-25 01:10:29 - INFO] - pyrogram.session.session - Session stopped
+[14-Mar-25 01:10:29 - INFO] - pyrogram.session.auth - Start creating a new auth key on DC4
+[14-Mar-25 01:10:29 - INFO] - pyrogram.connection.connection - Connecting...
+[14-Mar-25 01:10:29 - INFO] - pyrogram.connection.connection - Connected! Production DC4 - IPv4
+[14-Mar-25 01:10:30 - INFO] - pyrogram.session.auth - Done auth key exchange: DhGenOk
+[14-Mar-25 01:10:30 - INFO] - pyrogram.connection.connection - Disconnected
+[14-Mar-25 01:10:30 - INFO] - pyrogram.connection.connection - Connecting...
+[14-Mar-25 01:10:30 - INFO] - pyrogram.connection.connection - Connected! Production DC4 - IPv4
+[14-Mar-25 01:10:30 - INFO] - pyrogram.session.session - NetworkTask started
+[14-Mar-25 01:10:30 - INFO] - pyrogram.session.session - Session initialized: Layer 158
+[14-Mar-25 01:10:30 - INFO] - pyrogram.session.session - Device: CPython 3.9.21 - Pyrogram 2.0.106
+[14-Mar-25 01:10:30 - INFO] - pyrogram.session.session - System: Linux 5.4.0-208-generic (en)
+[14-Mar-25 01:10:30 - INFO] - pyrogram.session.session - Session started
+[14-Mar-25 01:10:30 - INFO] - pyrogram.session.session - PingTask started
+[14-Mar-25 01:10:30 - INFO] - pyrogram.dispatcher - Started 6 HandlerTasks
+[14-Mar-25 01:10:31 - INFO] - BotLogger - تم بدء تشغيل البوت Fox ...✓
+[14-Mar-25 01:10:31 - INFO] - BotLogger - تم تحميل الإضافات ...✓
+[14-Mar-25 01:10:31 - INFO] - BotLogger - جـار تـشـغـيـل الـحـسـابـات الـمـسـاعـدة
+[14-Mar-25 01:10:31 - INFO] - pyrogram.connection.connection - Connecting...
+[14-Mar-25 01:10:31 - INFO] - pyrogram.connection.connection - Connected! Production DC4 - IPv4
+[14-Mar-25 01:10:31 - INFO] - pyrogram.session.session - NetworkTask started
+[14-Mar-25 01:10:31 - INFO] - pyrogram.session.session - Session initialized: Layer 158
+[14-Mar-25 01:10:31 - INFO] - pyrogram.session.session - Device: CPython 3.9.21 - Pyrogram 2.0.106
+[14-Mar-25 01:10:31 - INFO] - pyrogram.session.session - System: Linux 5.4.0-208-generic (en)
+[14-Mar-25 01:10:31 - INFO] - pyrogram.session.session - Session started
+[14-Mar-25 01:10:31 - INFO] - pyrogram.session.session - PingTask started
+[14-Mar-25 01:10:31 - INFO] - BotLogger - تم بدء تشغيل الحساب المساعد 1: <a href=tg://user?id=7483904002>Dd</a> ...✓
+[14-Mar-25 01:10:31 - INFO] - BotLogger - ميــوزك فوكس: جارِ تحميل مكاتب الميوزك . . .
+
+[14-Mar-25 01:10:32 - INFO] - pyrogram.connection.connection - Connecting...
+[14-Mar-25 01:10:32 - INFO] - pyrogram.connection.connection - Connected! Production DC4 - IPv4
+[14-Mar-25 01:10:32 - INFO] - pyrogram.session.session - NetworkTask started
+[14-Mar-25 01:10:32 - INFO] - pyrogram.session.session - Session initialized: Layer 158
+[14-Mar-25 01:10:32 - INFO] - pyrogram.session.session - Device: CPython 3.9.21 - Pyrogram 2.0.106
+[14-Mar-25 01:10:32 - INFO] - pyrogram.session.session - System: Linux 5.4.0-208-generic (en)
+[14-Mar-25 01:10:32 - INFO] - pyrogram.session.session - Session started
+[14-Mar-25 01:10:32 - INFO] - pyrogram.session.session - PingTask started
+[14-Mar-25 01:10:32 - INFO] - pyrogram.dispatcher - Started 6 HandlerTasks
+[14-Mar-25 01:10:34 - INFO] - pytgcalls - REQUEST: {"action":"join_call","chat_id":-1002071277392,"invite_hash":null,"buffer_long":4,"lip_sync":true,"solver_id":"oiSXoQ3QduihDrVT-hyz7P98","stream_audio":{"path":"fifo://https://telegra.ph/file/29f784eb49d230ab62e9e.mp4","bitrate":48000,"ffmpeg_parameters":""},"stream_video":{"path":"fifo://https://telegra.ph/file/29f784eb49d230ab62e9e.mp4","width":640,"height":360,"framerate":20,"ffmpeg_parameters":""}}
+[14-Mar-25 01:10:34 - INFO] - pytgcalls - RUNNING_FFMPEG_COMMAND -> ffmpeg -i https://telegra.ph/file/29f784eb49d230ab62e9e.mp4 -f s16le -ac 1 -ar 48000 pipe:1
+[14-Mar-25 01:10:34 - INFO] - pytgcalls - RUNNING_FFMPEG_COMMAND -> ffmpeg -i https://telegra.ph/file/29f784eb49d230ab62e9e.mp4 -f rawvideo -pix_fmt yuv420p -r 20 -vf scale=640:360 pipe:1
+[14-Mar-25 01:10:34 - INFO] - pytgcalls - callJoinPayload -> {"chat_id":-1002071277392,"ufrag":"CyMT","pwd":"36wSII1Htsy5QYed9iwfvoSR","hash":"sha-256","setup":"active","fingerprint":"89:3B:0D:A9:19:28:5C:60:B1:AF:17:35:6E:E2:90:21:C8:5A:EF:17:C8:47:83:80:8B:FC:D8:7C:33:B0:24:A1","source":138217737,"source_groups":[3180936594,1855997967],"have_video":false,"invite_hash":null}
+[14-Mar-25 01:10:34 - INFO] - pytgcalls - joinCallRequestResult -> {"transport":{"ufrag":"6loaa1im937u0q","pwd":"57hsddvdp12er7hgfajg0bb8kc","fingerprints":[{"fingerprint":"71:9B:47:D9:D4:7C:8C:E6:94:38:5F:69:43:14:2F:6C:81:E3:D9:23:12:18:ED:C6:32:B6:28:5F:10:B4:4D:7F","setup":"passive","hash":"sha-256"}],"candidates":[{"generation":"0","component":"1","protocol":"udp","port":"32003","ip":"2001:67c:4e8:f102:e:0:2163:939","foundation":"1","id":"176c746a5ba6f0780ffffffff8f140075","priority":"2130706431","type":"host","network":"0"},{"generation":"0","component":"1","protocol":"udp","port":"32003","ip":"91.108.9.233","foundation":"2","id":"4e21ca25ba6f0780ffffffffa52609a7","priority":"2130706431","type":"host","network":"0"}]}}
+[14-Mar-25 01:10:34 - INFO] - pytgcalls - REQUEST: {"action":"leave_call","chat_id":-1002071277392,"type":"requested","solver_id":"6e0I3Y8g4rds_PUHYwSWorDn"}
+[14-Mar-25 01:10:34 - INFO] - BotLogger - البوت يعمل بنجاح ✅
+[14-Mar-25 01:11:47 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1346' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.9/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002332947533')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002332947533'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002332947533
+[14-Mar-25 01:11:51 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1358' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.9/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002436850984')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002436850984'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002436850984
+[14-Mar-25 01:12:05 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1413' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.9/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002280402171')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002280402171'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002280402171
+[14-Mar-25 01:12:41 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1577' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.9/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002280402171')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002280402171'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002280402171
+[14-Mar-25 01:13:18 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1776' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.9/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002436850984')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002436850984'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002436850984
+[14-Mar-25 01:13:53 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1976' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.9/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002332947533')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002332947533'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002332947533
+[14-Mar-25 01:14:01 - ERROR] - pyrogram.dispatcher - Telegram says: [400 PEER_ID_INVALID] - The peer id being used is invalid or not known yet. Make sure you meet the peer before interacting with it 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: 6401339012'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 85, in resolve_peer
+    return await self.storage.get_peer_by_phone_number(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/storage/sqlite_storage.py", line 168, in get_peer_by_phone_number
+    raise KeyError(f"Phone number not found: {phone_number}")
+KeyError: 'Phone number not found: 6401339012'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/fox2/SrcMusicKERO/plugins/play/ownerr.py", line 50, in khfzss
+    usrr = await client.get_chat(OWNER_ID)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/chats/get_chat.py", line 78, in get_chat
+    peer = await self.resolve_peer(chat_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 87, in resolve_peer
+    raise PeerIdInvalid
+pyrogram.errors.exceptions.bad_request_400.PeerIdInvalid: Telegram says: [400 PEER_ID_INVALID] - The peer id being used is invalid or not known yet. Make sure you meet the peer before interacting with it 
+[14-Mar-25 01:14:08 - INFO] - pyrogram.connection.connection - Connecting...
+[14-Mar-25 01:14:08 - INFO] - pyrogram.connection.connection - Connected! Production DC4 (media) - IPv4
+[14-Mar-25 01:14:08 - INFO] - pyrogram.session.session - NetworkTask started
+[14-Mar-25 01:14:08 - INFO] - pyrogram.session.session - Session initialized: Layer 158
+[14-Mar-25 01:14:08 - INFO] - pyrogram.session.session - Device: CPython 3.9.21 - Pyrogram 2.0.106
+[14-Mar-25 01:14:08 - INFO] - pyrogram.session.session - System: Linux 5.4.0-208-generic (en)
+[14-Mar-25 01:14:08 - INFO] - pyrogram.session.session - Session started
+[14-Mar-25 01:14:08 - INFO] - pyrogram.session.session - PingTask started
+[14-Mar-25 01:14:08 - INFO] - pyrogram.session.session - PingTask stopped
+[14-Mar-25 01:14:08 - INFO] - pyrogram.connection.connection - Disconnected
+[14-Mar-25 01:14:08 - INFO] - pyrogram.session.session - NetworkTask stopped
+[14-Mar-25 01:14:08 - INFO] - pyrogram.session.session - Session stopped
+[14-Mar-25 01:14:08 - INFO] - pyrogram.connection.connection - Connecting...
+[14-Mar-25 01:14:08 - INFO] - pyrogram.connection.connection - Connected! Production DC4 (media) - IPv4
+[14-Mar-25 01:14:08 - INFO] - pyrogram.session.session - NetworkTask started
+[14-Mar-25 01:14:08 - INFO] - pyrogram.session.session - Session initialized: Layer 158
+[14-Mar-25 01:14:08 - INFO] - pyrogram.session.session - Device: CPython 3.9.21 - Pyrogram 2.0.106
+[14-Mar-25 01:14:08 - INFO] - pyrogram.session.session - System: Linux 5.4.0-208-generic (en)
+[14-Mar-25 01:14:08 - INFO] - pyrogram.session.session - Session started
+[14-Mar-25 01:14:08 - INFO] - pyrogram.session.session - PingTask started
+[14-Mar-25 01:14:08 - INFO] - pyrogram.session.session - PingTask stopped
+[14-Mar-25 01:14:08 - INFO] - pyrogram.connection.connection - Disconnected
+[14-Mar-25 01:14:08 - INFO] - pyrogram.session.session - NetworkTask stopped
+[14-Mar-25 01:14:08 - INFO] - pyrogram.session.session - Session stopped
+[14-Mar-25 01:16:07 - ERROR] - pyrogram.dispatcher - name 'TOM_ID' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/root/fox2/SrcMusicKERO/plugins/play/رفع مطور25.py", line 58, in promote_devs
+    if not (is_tom(client, message) or is_basic_dev(client, message) or is_owner_id(client, message)):
+  File "/root/fox2/SrcMusicKERO/plugins/play/رفع مطور25.py", line 18, in is_tom
+    return message.from_user.id == TOM_ID
+NameError: name 'TOM_ID' is not defined
+[14-Mar-25 01:17:41 - ERROR] - pyrogram.dispatcher - 'NoneType' object has no attribute 'big_file_id'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/fox2/SrcMusicKERO/plugins/play/المالك.py", line 94, in iddd
+    photo = await app.download_media(usr.photo.big_file_id)
+AttributeError: 'NoneType' object has no attribute 'big_file_id'
+[14-Mar-25 01:17:52 - ERROR] - pyrogram.dispatcher - 'NoneType' object has no attribute 'big_file_id'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/fox2/SrcMusicKERO/plugins/play/المالك.py", line 94, in iddd
+    photo = await app.download_media(usr.photo.big_file_id)
+AttributeError: 'NoneType' object has no attribute 'big_file_id'
+[14-Mar-25 01:17:56 - ERROR] - pyrogram.dispatcher - 'NoneType' object has no attribute 'big_file_id'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/fox2/SrcMusicKERO/plugins/play/المالك.py", line 94, in iddd
+    photo = await app.download_media(usr.photo.big_file_id)
+AttributeError: 'NoneType' object has no attribute 'big_file_id'
+[14-Mar-25 01:18:09 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-4030' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.9/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002332947533')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002332947533'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002332947533
+[14-Mar-25 01:18:31 - INFO] - pyrogram.connection.connection - Connecting...
+[14-Mar-25 01:18:31 - INFO] - pyrogram.connection.connection - Connected! Production DC4 (media) - IPv4
+[14-Mar-25 01:18:31 - INFO] - pyrogram.session.session - NetworkTask started
+[14-Mar-25 01:18:31 - INFO] - pyrogram.session.session - Session initialized: Layer 158
+[14-Mar-25 01:18:31 - INFO] - pyrogram.session.session - Device: CPython 3.9.21 - Pyrogram 2.0.106
+[14-Mar-25 01:18:31 - INFO] - pyrogram.session.session - System: Linux 5.4.0-208-generic (en)
+[14-Mar-25 01:18:31 - INFO] - pyrogram.session.session - Session started
+[14-Mar-25 01:18:31 - INFO] - pyrogram.session.session - PingTask started
+[14-Mar-25 01:18:31 - INFO] - pyrogram.session.session - PingTask stopped
+[14-Mar-25 01:18:31 - INFO] - pyrogram.connection.connection - Disconnected
+[14-Mar-25 01:18:31 - INFO] - pyrogram.session.session - NetworkTask stopped
+[14-Mar-25 01:18:31 - INFO] - pyrogram.session.session - Session stopped
+[14-Mar-25 01:18:31 - INFO] - pyrogram.connection.connection - Connecting...
+[14-Mar-25 01:18:31 - INFO] - pyrogram.connection.connection - Connected! Production DC4 (media) - IPv4
+[14-Mar-25 01:18:31 - INFO] - pyrogram.session.session - NetworkTask started
+[14-Mar-25 01:18:31 - INFO] - pyrogram.session.session - Session initialized: Layer 158
+[14-Mar-25 01:18:31 - INFO] - pyrogram.session.session - Device: CPython 3.9.21 - Pyrogram 2.0.106
+[14-Mar-25 01:18:31 - INFO] - pyrogram.session.session - System: Linux 5.4.0-208-generic (en)
+[14-Mar-25 01:18:31 - INFO] - pyrogram.session.session - Session started
+[14-Mar-25 01:18:31 - INFO] - pyrogram.session.session - PingTask started
+[14-Mar-25 01:18:32 - INFO] - pyrogram.session.session - PingTask stopped
+[14-Mar-25 01:18:32 - INFO] - pyrogram.connection.connection - Disconnected
+[14-Mar-25 01:18:32 - INFO] - pyrogram.session.session - NetworkTask stopped
+[14-Mar-25 01:18:32 - INFO] - pyrogram.session.session - Session stopped
+[14-Mar-25 01:20:35 - ERROR] - pyrogram.dispatcher - Telegram says: [400 PEER_ID_INVALID] - The peer id being used is invalid or not known yet. Make sure you meet the peer before interacting with it 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: 6401339012'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 85, in resolve_peer
+    return await self.storage.get_peer_by_phone_number(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/storage/sqlite_storage.py", line 168, in get_peer_by_phone_number
+    raise KeyError(f"Phone number not found: {phone_number}")
+KeyError: 'Phone number not found: 6401339012'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/fox2/SrcMusicKERO/plugins/play/ownerr.py", line 50, in khfzss
+    usrr = await client.get_chat(OWNER_ID)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/chats/get_chat.py", line 78, in get_chat
+    peer = await self.resolve_peer(chat_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 87, in resolve_peer
+    raise PeerIdInvalid
+pyrogram.errors.exceptions.bad_request_400.PeerIdInvalid: Telegram says: [400 PEER_ID_INVALID] - The peer id being used is invalid or not known yet. Make sure you meet the peer before interacting with it 
+[14-Mar-25 01:20:57 - ERROR] - pyrogram.dispatcher - Telegram says: [400 PEER_ID_INVALID] - The peer id being used is invalid or not known yet. Make sure you meet the peer before interacting with it 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: 6401339012'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 85, in resolve_peer
+    return await self.storage.get_peer_by_phone_number(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/storage/sqlite_storage.py", line 168, in get_peer_by_phone_number
+    raise KeyError(f"Phone number not found: {phone_number}")
+KeyError: 'Phone number not found: 6401339012'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/fox2/SrcMusicKERO/plugins/play/ownerr.py", line 50, in khfzss
+    usrr = await client.get_chat(OWNER_ID)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/chats/get_chat.py", line 78, in get_chat
+    peer = await self.resolve_peer(chat_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 87, in resolve_peer
+    raise PeerIdInvalid
+pyrogram.errors.exceptions.bad_request_400.PeerIdInvalid: Telegram says: [400 PEER_ID_INVALID] - The peer id being used is invalid or not known yet. Make sure you meet the peer before interacting with it 
+[14-Mar-25 01:21:06 - ERROR] - pyrogram.dispatcher - Telegram says: [400 PEER_ID_INVALID] - The peer id being used is invalid or not known yet. Make sure you meet the peer before interacting with it 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: 6401339012'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 85, in resolve_peer
+    return await self.storage.get_peer_by_phone_number(peer_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/storage/sqlite_storage.py", line 168, in get_peer_by_phone_number
+    raise KeyError(f"Phone number not found: {phone_number}")
+KeyError: 'Phone number not found: 6401339012'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/fox2/SrcMusicKERO/plugins/play/ownerr.py", line 50, in khfzss
+    usrr = await client.get_chat(OWNER_ID)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/chats/get_chat.py", line 78, in get_chat
+    peer = await self.resolve_peer(chat_id)
+  File "/usr/local/lib/python3.9/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 87, in resolve_peer
+    raise PeerIdInvalid
+pyrogram.errors.exceptions.bad_request_400.PeerIdInvalid: Telegram says: [400 PEER_ID_INVALID] - The peer id being used is invalid or not known yet. Make sure you meet the peer before interacting with it 
+[14-Mar-25 01:21:52 - INFO] - root - Stop signal received (SIGINT). Exiting...
+[14-Mar-25 01:21:52 - INFO] - pyrogram.dispatcher - Stopped 6 HandlerTasks
+[14-Mar-25 01:21:52 - INFO] - pyrogram.session.session - PingTask stopped
+[14-Mar-25 01:21:52 - INFO] - pyrogram.connection.connection - Disconnected
+[14-Mar-25 01:21:52 - INFO] - pyrogram.session.session - NetworkTask stopped
+[14-Mar-25 01:21:52 - INFO] - pyrogram.session.session - Session stopped
+[14-Mar-25 01:21:52 - INFO] - BotLogger - جـار إيـقـاف الـحـسـابـات الـمـسـاعـدة...
+[14-Mar-25 01:21:52 - INFO] - pyrogram.session.session - PingTask stopped
+[14-Mar-25 01:21:52 - INFO] - pyrogram.connection.connection - Disconnected
+[14-Mar-25 01:21:52 - INFO] - pyrogram.session.session - NetworkTask stopped
+[14-Mar-25 01:21:52 - INFO] - pyrogram.session.session - Session stopped
+[14-Mar-25 01:21:52 - INFO] - BotLogger - جارِ إيقاف بوت الميوزك . . .
+[14-Mar-25 01:21:52 - INFO] - pytgcalls - Node.js stopped
+[14-Mar-25 01:21:52 - INFO] - pytgcalls - Node.js stopped
+[14-Mar-25 01:21:52 - INFO] - pytgcalls - Node.js stopped
+[14-Mar-25 01:21:52 - INFO] - pytgcalls - Node.js stopped
+[14-Mar-25 01:21:52 - INFO] - pytgcalls - Node.js stopped
+[14-Mar-25 18:03:31 - INFO] - BotLogger - Logger has been initialized successfully!
+[14-Mar-25 18:03:31 - INFO] - BotLogger - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
+[14-Mar-25 18:03:31 - INFO] - BotLogger - تم الاتصـال بقاعـدة البيانـات ...✓
+[14-Mar-25 18:03:31 - INFO] - BotLogger - تم تحـديث السـورس ...✓
+[14-Mar-25 18:03:31 - INFO] - BotLogger - ✅ تم تحديث قاعدة بيانات البوت بنجاح
+[14-Mar-25 18:03:31 - INFO] - BotLogger - ⚠️ البوت لا يعمل على Heroku، تجاوز إعدادات Heroku
+[14-Mar-25 18:03:31 - INFO] - BotLogger - ميوزك اليــكس - جارِ بدء تشغيل البوت . . .
+[14-Mar-25 18:06:58 - INFO] - BotLogger - Logger has been initialized successfully!
+[14-Mar-25 18:06:58 - INFO] - BotLogger - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
+[14-Mar-25 18:06:58 - INFO] - BotLogger - تم الاتصـال بقاعـدة البيانـات ...✓
+[14-Mar-25 18:06:58 - INFO] - BotLogger - تم تحـديث السـورس ...✓
+[14-Mar-25 18:06:58 - INFO] - BotLogger - ✅ تم تحديث قاعدة بيانات البوت بنجاح
+[14-Mar-25 18:06:58 - INFO] - BotLogger - ⚠️ البوت لا يعمل على Heroku، تجاوز إعدادات Heroku
+[14-Mar-25 18:06:58 - INFO] - BotLogger - ميوزك اليــكس - جارِ بدء تشغيل البوت . . .
+[14-Mar-25 22:44:54 - INFO] - BotLogger - Logger has been initialized successfully!
+[14-Mar-25 22:44:54 - INFO] - BotLogger - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
+[14-Mar-25 22:44:54 - INFO] - BotLogger - تم الاتصـال بقاعـدة البيانـات ...✓
+[14-Mar-25 22:44:54 - INFO] - BotLogger - تم تحـديث السـورس ...✓
+[14-Mar-25 22:44:54 - INFO] - BotLogger - ✅ تم تحديث قاعدة بيانات البوت بنجاح
+[14-Mar-25 22:44:54 - INFO] - BotLogger - ⚠️ البوت لا يعمل على Heroku، تجاوز إعدادات Heroku
+[14-Mar-25 22:44:54 - INFO] - BotLogger - ميوزك اليــكس - جارِ بدء تشغيل البوت . . .
