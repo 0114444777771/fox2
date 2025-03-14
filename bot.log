@@ -7871,3 +7871,48 @@ pyrogram.errors.exceptions.bad_request_400.PeerIdInvalid: Telegram says: [400 PE
 [14-Mar-25 23:25:47 - INFO] - pytgcalls - Node.js stopped
 [14-Mar-25 23:25:47 - INFO] - pytgcalls - Node.js stopped
 [14-Mar-25 23:25:47 - INFO] - pytgcalls - Node.js stopped
+[14-Mar-25 23:26:40 - INFO] - BotLogger - Logger has been initialized successfully!
+[14-Mar-25 23:26:40 - INFO] - BotLogger - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
+[14-Mar-25 23:26:40 - INFO] - BotLogger - تم الاتصـال بقاعـدة البيانـات ...✓
+[14-Mar-25 23:26:40 - INFO] - BotLogger - تم تحـديث السـورس ...✓
+[14-Mar-25 23:26:40 - INFO] - BotLogger - ✅ تم تحديث قاعدة بيانات البوت بنجاح
+[14-Mar-25 23:26:40 - INFO] - BotLogger - ⚠️ البوت لا يعمل على Heroku، تجاوز إعدادات Heroku
+[14-Mar-25 23:26:40 - INFO] - BotLogger - ميوزك اليــكس - جارِ بدء تشغيل البوت . . .
+[14-Mar-25 23:26:42 - INFO] - BotLogger - ✅ تم تحميل قائمة المطورين (1 شخص)
+[14-Mar-25 23:26:42 - INFO] - pyrogram.session.auth - Start creating a new auth key on DC2
+[14-Mar-25 23:26:42 - INFO] - pyrogram.connection.connection - Connecting...
+[14-Mar-25 23:26:42 - INFO] - pyrogram.connection.connection - Connected! Production DC2 - IPv4
+[14-Mar-25 23:26:44 - INFO] - pyrogram.session.auth - Done auth key exchange: DhGenOk
+[14-Mar-25 23:26:44 - INFO] - pyrogram.connection.connection - Disconnected
+[14-Mar-25 23:26:44 - INFO] - pyrogram.connection.connection - Connecting...
+[14-Mar-25 23:26:44 - INFO] - pyrogram.connection.connection - Connected! Production DC2 - IPv4
+[14-Mar-25 23:26:44 - INFO] - pyrogram.session.session - NetworkTask started
+[14-Mar-25 23:26:44 - INFO] - pyrogram.session.session - Session initialized: Layer 158
+[14-Mar-25 23:26:44 - INFO] - pyrogram.session.session - Device: CPython 3.9.21 - Pyrogram 2.0.106
+[14-Mar-25 23:26:44 - INFO] - pyrogram.session.session - System: Linux 5.4.0-208-generic (en)
+[14-Mar-25 23:26:44 - INFO] - pyrogram.session.session - Session started
+[14-Mar-25 23:26:44 - INFO] - pyrogram.session.session - PingTask started
+[14-Mar-25 23:26:44 - INFO] - pyrogram.session.session - PingTask stopped
+[14-Mar-25 23:26:44 - INFO] - pyrogram.connection.connection - Disconnected
+[14-Mar-25 23:26:44 - INFO] - pyrogram.session.session - NetworkTask stopped
+[14-Mar-25 23:26:44 - INFO] - pyrogram.session.session - Session stopped
+[14-Mar-25 23:26:44 - INFO] - pyrogram.session.auth - Start creating a new auth key on DC4
+[14-Mar-25 23:26:44 - INFO] - pyrogram.connection.connection - Connecting...
+[14-Mar-25 23:26:44 - INFO] - pyrogram.connection.connection - Connected! Production DC4 - IPv4
+[14-Mar-25 23:26:45 - INFO] - pyrogram.session.auth - Done auth key exchange: DhGenOk
+[14-Mar-25 23:26:45 - INFO] - pyrogram.connection.connection - Disconnected
+[14-Mar-25 23:26:45 - INFO] - pyrogram.connection.connection - Connecting...
+[14-Mar-25 23:26:45 - INFO] - pyrogram.connection.connection - Connected! Production DC4 - IPv4
+[14-Mar-25 23:26:45 - INFO] - pyrogram.session.session - NetworkTask started
+[14-Mar-25 23:26:45 - INFO] - pyrogram.session.session - Session initialized: Layer 158
+[14-Mar-25 23:26:45 - INFO] - pyrogram.session.session - Device: CPython 3.9.21 - Pyrogram 2.0.106
+[14-Mar-25 23:26:45 - INFO] - pyrogram.session.session - System: Linux 5.4.0-208-generic (en)
+[14-Mar-25 23:26:45 - INFO] - pyrogram.session.session - Session started
+[14-Mar-25 23:26:45 - INFO] - pyrogram.session.session - PingTask started
+[14-Mar-25 23:26:46 - INFO] - pyrogram.dispatcher - Started 6 HandlerTasks
+[14-Mar-25 23:26:46 - INFO] - BotLogger - تم بدء تشغيل البوت Fox ...✓
+[14-Mar-25 23:26:46 - INFO] - pytgcalls - Node.js stopped
+[14-Mar-25 23:26:46 - INFO] - pytgcalls - Node.js stopped
+[14-Mar-25 23:26:46 - INFO] - pytgcalls - Node.js stopped
+[14-Mar-25 23:26:46 - INFO] - pytgcalls - Node.js stopped
+[14-Mar-25 23:26:46 - INFO] - pytgcalls - Node.js stopped
