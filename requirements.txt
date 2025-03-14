@@ -13,7 +13,7 @@ pillow==10.0.0
 psutil==5.9.5
 asBASE==0.5
 pytgcalls==2.1.0
-pykeyboard==0.0.5
+pykeyboard==0.1.5
 pyrogram==2.0.106
 telegraph==1.4.0
 python-dotenv==1.0.0
