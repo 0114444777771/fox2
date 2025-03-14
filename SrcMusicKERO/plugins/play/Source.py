@@ -1,4 +1,4 @@
-import asyncio
+/import asyncio
 import os
 import time
 import requests
@@ -76,4 +76,4 @@ async def show_programmer_info_ahmed(client: Client, message: Message):
     await get_developer_info(client, message, "Loo_la3", "معلومات مبرمج السورس")
 
 # تأكد من تشغيل التطبيق
-app.run()
+asyncio.run(app.start())
