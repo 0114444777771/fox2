@@ -8,7 +8,7 @@ from pyrogram.errors import (
     UserNotParticipant,
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from pyrogram.errors import UserNotParticipant
+#from pyrogram.errors import UserNotParticipant
 from SrcMusicKERO import YouTube, app
 from SrcMusicKERO.misc import SUDOERS
 from SrcMusicKERO.utils.database import (
@@ -122,7 +122,7 @@ def PlayWrapper(command):
                 return await message.reply_text(
                     _["call_2"].format(app.mention, userbot.id, userbot.name, userbot.username)
                 )
-            except UserNotParticipant:
+            #except UserNotParticipant:
                 if chat_id in links:
                     invitelink = links[chat_id]
                 else:
