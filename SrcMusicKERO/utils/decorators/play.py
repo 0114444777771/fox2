@@ -26,7 +26,6 @@ from strings import get_string
 
 links = {}
 
-
 def PlayWrapper(command):
     async def wrapper(client, message):
         language = await get_lang(message.chat.id)
@@ -53,7 +52,15 @@ def PlayWrapper(command):
             if message.reply_to_message
             else None
         )
-        url = await YouTube.url(message)
+
+        # التعديل هنا لفحص وجود الدالة get_url
+        url = None
+        if hasattr(YouTube, 'get_url'):
+            url = await YouTube.get_url(message)
+        else:
+            await message.reply_text("لم يتم العثور على رابط الفيديو. يرجى المحاولة لاحقاً.")
+            return
+
         if audio_telegram is None and video_telegram is None and url is None:
             if len(message.command) < 2:
                 if "stream" in message.command:
@@ -64,6 +71,7 @@ def PlayWrapper(command):
                     caption=_["play_18"],
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
+
         if message.command[0][0] == "c":
             chat_id = await get_cmode(message.chat.id)
             if chat_id is None:
@@ -76,8 +84,10 @@ def PlayWrapper(command):
         else:
             chat_id = message.chat.id
             channel = None
+        
         playmode = await get_playmode(message.chat.id)
         playty = await get_playtype(message.chat.id)
+        
         if playty != "Everyone":
             if message.from_user.id not in SUDOERS:
                 admins = adminlist.get(message.chat.id)
@@ -86,6 +96,7 @@ def PlayWrapper(command):
                 else:
                     if message.from_user.id not in admins:
                         return await message.reply_text(_["play_4"])
+
         if message.command[0][0] == "v":
             video = True
         else:
@@ -93,6 +104,7 @@ def PlayWrapper(command):
                 video = True
             else:
                 video = True if message.command[0][1] == "v" else None
+        
         if message.command[0][-1] == "e":
             if not await is_active_chat(chat_id):
                 return await message.reply_text(_["play_16"])
@@ -103,19 +115,13 @@ def PlayWrapper(command):
         if not await is_active_chat(chat_id):
             userbot = await get_assistant(chat_id)
             try:
-                try:
-                    get = await app.get_chat_member(chat_id, userbot.id)
-                except ChatAdminRequired:
-                    return await message.reply_text(_["call_1"])
-                if (
-                    get.status == ChatMemberStatus.BANNED
-                    or get.status == ChatMemberStatus.RESTRICTED
-                ):
-                    return await message.reply_text(
-                        _["call_2"].format(
-                            app.mention, userbot.id, userbot.name, userbot.username
-                        )
-                    )
+                get = await app.get_chat_member(chat_id, userbot.id)
+            except ChatAdminRequired:
+                return await message.reply_text(_["call_1"])
+            if get.status == ChatMemberStatus.BANNED or get.status == ChatMemberStatus.RESTRICTED:
+                return await message.reply_text(
+                    _["call_2"].format(app.mention, userbot.id, userbot.name, userbot.username)
+                )
             except UserNotParticipant:
                 if chat_id in links:
                     invitelink = links[chat_id]
