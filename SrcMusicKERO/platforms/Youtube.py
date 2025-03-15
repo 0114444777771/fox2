@@ -142,8 +142,8 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
         playlist = await shell_cmd(
-            f"yt-dlp --cookies {cookies_file} -i --get-id --flat-playlist --playlist-end {limit} --skip-download {link}"
-        )
+    f"yt-dlp --cookies /root/fox2/cookies/cookies_fixed.txt -i --get-id --flat-playlist --playlist-end {limit} --skip-download {link}"
+)
         try:
             result = playlist.split("\n")
             for key in result:
