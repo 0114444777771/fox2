@@ -8,7 +8,7 @@ from pyrogram.errors import (
     UserNotParticipant,
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-
+from pyrogram.errors import UserNotParticipant
 from SrcMusicKERO import YouTube, app
 from SrcMusicKERO.misc import SUDOERS
 from SrcMusicKERO.utils.database import (
