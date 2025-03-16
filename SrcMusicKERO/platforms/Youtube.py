@@ -36,6 +36,17 @@ class YouTubeAPI:
             link = self.base + link
         return bool(re.search(self.regex, link))
 
+    async def url(self, message: Message):
+        """ استخراج رابط الفيديو من الرسالة """
+        text = message.text or message.caption  # يدعم الرسائل النصية والميديا مع كابشن
+        if not text:
+            return None
+
+        video_id_match = re.search(r"(?:v=|youtu\.be/|embed/|shorts/|watch\?v=)([\w-]+)", text)
+        if video_id_match:
+            return self.base + video_id_match.group(1)
+        return None
+
     async def video(self, link: str, videoid: Union[bool, str] = None):
         """ جلب رابط الفيديو باستخدام yt-dlp """
         if videoid:
@@ -109,3 +120,20 @@ class YouTubeAPI:
             print(f"🔹 تحميل صوت: {title}")
             await loop.run_in_executor(None, download_audio)
             return f"downloads/{title}.mp3"
+
+
+# ✅ **مثال استدعاء `url()` و `video()` معًا**
+async def process_message(message: Message):
+    youtube = YouTubeAPI()
+    url = await youtube.url(message)
+    
+    if url:
+        print(f"✅ رابط الفيديو المستخرج: {url}")
+        status, video_url = await youtube.video(url)
+        
+        if status == 1:
+            print(f"🎵 رابط التشغيل: {video_url}")
+        else:
+            print(f"❌ خطأ في جلب الفيديو: {video_url}")
+    else:
+        print("❌ لم يتم العثور على رابط فيديو في الرسالة!")
