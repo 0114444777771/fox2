@@ -1,35 +1,27 @@
 import asyncio
+import os
 import re
 from typing import Union
+
 import yt_dlp
-from pyrogram.enums import ChatMemberStatus
-from pyrogram.errors import (
-    ChatAdminRequired,
-    InviteRequestSent,
-    UserAlreadyParticipant,
-    UserNotParticipant,
-)
-from pyrogram.types import InlineKeyboardMarkup
+from pyrogram.enums import MessageEntityType
+from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
-from SrcMusicKERO import app
-from SrcMusicKERO.utils.database import (
-    get_assistant,
-    get_cmode,
-    get_lang,
-    get_playmode,
-    get_playtype,
-    is_active_chat,
-)
-from SrcMusicKERO.utils.inline import botplaylist_markup
-from config import PLAYLIST_IMG_URL, SUDOERS, adminlist
-from strings import get_string
+from config import PLAYLIST_IMG_URL, sudoers as SUDOERS, adminlist  # ✅ تم تصحيح الخطأ هنا
 
-# 🔹 مسار ملف الكوكيز
+async def shell_cmd(cmd):
+    """ تشغيل أوامر النظام داخل asyncio """
+    proc = await asyncio.create_subprocess_shell(
+        cmd,
+        stdout=asyncio.subprocess.PIPE,
+        stderr=asyncio.subprocess.PIPE,
+    )
+    out, errorz = await proc.communicate()
+    return out.decode("utf-8") if not errorz else errorz.decode("utf-8")
+
+# 🔹 تعديل مسار ملف الكوكيز بدون "root"
 cookies_file = "/fox2/cookies/cookies_fixed.txt"
-
-# 🔹 تخزين روابط الدعوات لتسريع الانضمام
-links = {}
 
 class YouTubeAPI:
     def __init__(self):
@@ -37,138 +29,108 @@ class YouTubeAPI:
         self.listbase = "https://youtube.com/playlist?list="
         self.regex = r"(?:youtube\.com|youtu\.be)"
 
-    async def url(self, message):
-        """ استخراج رابط الفيديو من الرسالة أو البحث عنه """
-        text = message.text or message.caption  
+    async def exists(self, link: str, videoid: Union[bool, str] = None):
+        if videoid:
+            link = self.base + link
+        return bool(re.search(self.regex, link))
+
+    async def url(self, message: Message):
+        """ استخراج رابط الفيديو من الرسالة """
+        text = message.text or message.caption
         if not text:
             return None
 
-        # البحث عن رابط يوتيوب داخل الرسالة
-        url_match = re.search(
-            r"(https?://)?(www\.)?"
-            r"(youtube\.com/watch\?v=|youtu\.be/|youtube\.com/embed/|youtube\.com/shorts/)"
-            r"([\w-]+)", text
-        )
+        video_id_match = re.search(r"(?:v=|youtu\.be/|embed/|shorts/|watch\?v=)([\w-]+)", text)
+        if video_id_match:
+            return self.base + video_id_match.group(1)
+        return None
 
-        if url_match:
-            return "https://www.youtube.com/watch?v=" + url_match.group(4)
-
-        # البحث عن الفيديو إذا لم يتم إدخال رابط
-        query = " ".join(text.split()[1:])  # حذف أول كلمة (الأمر نفسه مثل "تشغيل")
-        if not query:
-            return None  # إذا لم يتم إدخال أي اسم، لا تفعل شيئًا
-
-        print(f"🔎 البحث عن: {query}")
-        search = VideosSearch(query, limit=1)
-        results = await search.next()
-        
-        if results["result"]:
-            video_url = results["result"][0]["link"]
-            print(f"✅ تم العثور على الفيديو: {video_url}")
-            return video_url
-        else:
-            print("❌ لم يتم العثور على أي نتائج!")
-            return None
-
-    async def video(self, link):
+    async def video(self, link: str, videoid: Union[bool, str] = None):
         """ جلب رابط الفيديو باستخدام yt-dlp """
+        if videoid:
+            link = self.base + link
         print(f"🔹 تشغيل video() مع الرابط: {link}")
         proc = await asyncio.create_subprocess_exec(
             "yt-dlp",
             "--cookies", cookies_file,
             "-g",
             "-f",
-            "bestaudio",
-            link,
+            "best[height<=?720][width<=?1280]",
+            f"{link}",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE,
         )
         stdout, stderr = await proc.communicate()
         return (1, stdout.decode().split("\n")[0]) if stdout else (0, stderr.decode())
 
+    async def playlist(self, link, limit, user_id, videoid: Union[bool, str] = None):
+        """ جلب قائمة تشغيل من YouTube """
+        if videoid:
+            link = self.listbase + link
+        print(f"🔹 تشغيل playlist() مع الرابط: {link}")
+        playlist = await shell_cmd(
+            f"yt-dlp --cookies {cookies_file} -i --get-id --flat-playlist --playlist-end {limit} --skip-download {link}"
+        )
+        return [key for key in playlist.split("\n") if key]
 
-# 🔹 تغليف أوامر التشغيل
-def PlayWrapper(command):
-    async def wrapper(client, message):
-        language = await get_lang(message.chat.id)
-        _ = get_string(language)
+    async def download(self, link: str, title: str, format_id: str, songvideo: bool = False, songaudio: bool = False):
+        """ تحميل الصوت أو الفيديو من YouTube """
+        loop = asyncio.get_running_loop()
 
-        try:
-            await message.delete()
-        except:
-            pass
+        def download_audio():
+            ydl_opts = {
+                "format": format_id,
+                "outtmpl": f"downloads/{title}.%(ext)s",
+                "geo_bypass": True,
+                "nocheckcertificate": True,
+                "quiet": True,
+                "cookiefile": cookies_file,
+                "postprocessors": [
+                    {
+                        "key": "FFmpegExtractAudio",
+                        "preferredcodec": "mp3",
+                        "preferredquality": "192",
+                    }
+                ],
+            }
+            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                ydl.download([link])
 
-        youtube = YouTubeAPI()
-        url = await youtube.url(message)
+        def download_video():
+            ydl_opts = {
+                "format": f"{format_id}+140",
+                "outtmpl": f"downloads/{title}",
+                "geo_bypass": True,
+                "nocheckcertificate": True,
+                "quiet": True,
+                "cookiefile": cookies_file,
+                "prefer_ffmpeg": True,
+                "merge_output_format": "mp4",
+            }
+            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                ydl.download([link])
 
-        if not url:
-            return await message.reply_text("❌ لم يتم العثور على فيديو!")
+        if songvideo:
+            print(f"🔹 تحميل فيديو: {title}")
+            await loop.run_in_executor(None, download_video)
+            return f"downloads/{title}.mp4"
+        elif songaudio:
+            print(f"🔹 تحميل صوت: {title}")
+            await loop.run_in_executor(None, download_audio)
+            return f"downloads/{title}.mp3"
 
-        chat_id = await get_cmode(message.chat.id) if message.command[0][0] == "c" else message.chat.id
-        channel = None if chat_id == message.chat.id else (await app.get_chat(chat_id)).title
-
-        playmode = await get_playmode(message.chat.id)
-        playty = await get_playtype(message.chat.id)
-
-        if playty != "Everyone" and message.from_user.id not in SUDOERS:
-            admins = adminlist.get(message.chat.id, [])
-            if message.from_user.id not in admins:
-                return await message.reply_text(_["admin_13"] if not admins else _["play_4"])
-
-        video = "v" in message.command[0] or "-v" in message.text
-        fplay = message.command[0][-1] == "e"
-
-        if not await is_active_chat(chat_id):
-            userbot = await get_assistant(chat_id)
-            try:
-                get = await app.get_chat_member(chat_id, userbot.id)
-                if get.status in [ChatMemberStatus.BANNED, ChatMemberStatus.RESTRICTED]:
-                    return await message.reply_text(_["call_2"].format(app.mention, userbot.id, userbot.name, userbot.username))
-            except ChatAdminRequired:
-                return await message.reply_text(_["call_1"])
-
-        try:
-            await app.get_chat_member(chat_id, userbot.id)
-        except UserNotParticipant:
-            invitelink = links.get(chat_id) or await get_invite_link(message, chat_id, userbot)
-            await handle_invite_and_join(message, chat_id, userbot, invitelink)
-
-        return await command(client, message, _, chat_id, video, channel, playmode, url, fplay)
-
-    return wrapper
-
-
-async def get_invite_link(message, chat_id, userbot):
-    try:
-        invitelink = message.chat.username or await app.export_chat_invite_link(chat_id)
-        if invitelink.startswith("https://t.me/+"):
-            invitelink = invitelink.replace("https://t.me/+", "https://t.me/joinchat/")
-        return invitelink
-    except ChatAdminRequired:
-        return await message.reply_text("❌ البوت لا يملك صلاحية إنشاء روابط دعوة.")
-    except Exception as e:
-        return await message.reply_text(f"⚠️ خطأ أثناء استخراج رابط الدعوة: {type(e).__name__}")
-
-
-async def handle_invite_and_join(message, chat_id, userbot, invitelink):
-    myu = await message.reply_text("🔄 محاولة انضمام البوت...")
-    try:
-        await asyncio.sleep(1)
-        await userbot.join_chat(invitelink)
-    except InviteRequestSent:
-        try:
-            await app.approve_chat_join_request(chat_id, userbot.id)
-            await asyncio.sleep(3)
-            await myu.edit("✅ تم قبول طلب الانضمام بنجاح.")
-        except Exception as e:
-            return await message.reply_text(f"❌ فشل قبول طلب الانضمام: {type(e).__name__}")
-    except UserAlreadyParticipant:
-        pass
-    except Exception as e:
-        return await message.reply_text(f"⚠️ فشل الانضمام: {type(e).__name__}")
-
-    links[chat_id] = invitelink
-    try:
-        await userbot.resolve_peer(chat_id)
-    except:
-        pass
+# ✅ **مثال استدعاء `url()` و `video()` معًا**
+async def process_message(message: Message):
+    youtube = YouTubeAPI()
+    url = await youtube.url(message)
+    
+    if url:
+        print(f"✅ رابط الفيديو المستخرج: {url}")
+        status, video_url = await youtube.video(url)
+        
+        if status == 1:
+            print(f"🎵 رابط التشغيل: {video_url}")
+        else:
+            print(f"❌ خطأ في جلب الفيديو: {video_url}")
+    else:
+        print("❌ لم يتم العثور على رابط فيديو في الرسالة!")
