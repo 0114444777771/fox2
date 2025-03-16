@@ -30,10 +30,13 @@ def PlayWrapper(command):
         language = await get_lang(message.chat.id)
         _ = get_string(language)
 
-        #if await is_maintenance() and message.from_user.id not in SUDOERS:
-          #return await message.reply_text(
-                #text=f"{app.mention} ɪs ᴜɴᴅᴇʀ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ, ᴠɪsɪᴛ <a href={SUPPORT_CHAT}>sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ</a> ғᴏʀ ᴋɴᴏᴡɪɴɢ ᴛʜᴇ ʀᴇᴀsᴏɴ.",
-                #disable_web_page_preview=True,
+        # تعديل شرط الصيانة إلى False بدلاً من تعطيله
+        if await is_maintenance() == False or message.from_user.id in SUDOERS:
+            pass
+        else:
+            return await message.reply_text(
+                text=f"{app.mention} ɪs ᴜɴᴅᴇʀ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ, ᴠɪsɪᴛ <a href={SUPPORT_CHAT}>sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ</a> ғᴏʀ ᴋɴᴏᴡɪɴɢ ᴛʜᴇ ʀᴇᴀsᴏɴ.",
+                disable_web_page_preview=True,
             )
 
         try:
@@ -44,7 +47,6 @@ def PlayWrapper(command):
         audio_telegram = message.reply_to_message.audio if message.reply_to_message else None
         video_telegram = message.reply_to_message.video if message.reply_to_message else None
 
-        # التأكد من أن `url()` تعمل
         url = await YouTube.url(message) if hasattr(YouTube, "url") else None
 
         if not audio_telegram and not video_telegram and not url:
@@ -90,39 +92,3 @@ def PlayWrapper(command):
         return await command(client, message, _, chat_id, video, channel, playmode, url, fplay)
 
     return wrapper
-
-
-async def get_invite_link(message, chat_id, userbot):
-    try:
-        invitelink = message.chat.username or await app.export_chat_invite_link(chat_id)
-        if invitelink.startswith("https://t.me/+"):
-            invitelink = invitelink.replace("https://t.me/+", "https://t.me/joinchat/")
-        return invitelink
-    except ChatAdminRequired:
-        return await message.reply_text("❌ البوت لا يملك صلاحية إنشاء روابط دعوة.")
-    except Exception as e:
-        return await message.reply_text(f"⚠️ خطأ أثناء استخراج رابط الدعوة: {type(e).__name__}")
-
-
-async def handle_invite_and_join(message, chat_id, userbot, invitelink):
-    myu = await message.reply_text("🔄 محاولة انضمام البوت...")
-    try:
-        await asyncio.sleep(1)
-        await userbot.join_chat(invitelink)
-    except InviteRequestSent:
-        try:
-            await app.approve_chat_join_request(chat_id, userbot.id)
-            await asyncio.sleep(3)
-            await myu.edit("✅ تم قبول طلب الانضمام بنجاح.")
-        except Exception as e:
-            return await message.reply_text(f"❌ فشل قبول طلب الانضمام: {type(e).__name__}")
-    except UserAlreadyParticipant:
-        pass
-    except Exception as e:
-        return await message.reply_text(f"⚠️ فشل الانضمام: {type(e).__name__}")
-
-    links[chat_id] = invitelink
-    try:
-        await userbot.resolve_peer(chat_id)
-    except:
-        pass
