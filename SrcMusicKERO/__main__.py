@@ -9,7 +9,7 @@ from SrcMusicKERO import LOGGER, app, userbot
 from SrcMusicKERO.core.call import Zelzaly
 from SrcMusicKERO.misc import sudo
 from SrcMusicKERO.plugins import ALL_MODULES
-from SrcMusicKERO.utils.database import get_banned_users, get_gbanned
+from SrcMusicKERO.utils.database import get_banned_users, get_gbanned, maintenance_off
 from config import BANNED_USERS
 
 
@@ -25,6 +25,11 @@ async def init():
         exit()
 
     await sudo()
+
+    # تعطيل وضع الصيانة
+    await maintenance_off()
+    LOGGER.info("✅ تم تعطيل وضع الصيانة بنجاح!")
+
     try:
         users = await get_gbanned()
         for user_id in users:
