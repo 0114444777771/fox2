@@ -28,7 +28,7 @@ async def maintenance(client, message: Message):
         if await is_maintenance() is False:
             await message.reply_text(_["maint_4"])
         else:
-            await maintenance_on()
+            await maintenance_off()
             await message.reply_text(_["maint_2"].format(app.mention))
     elif state == "تعطيل":
         if await is_maintenance() is False:
