@@ -1,15 +1,11 @@
 import asyncio
-import os
 import re
 from typing import Union
 
 import yt_dlp
-from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
-from SrcMusicKERO.utils.database import is_on_off
-from SrcMusicKERO.utils.formatters import time_to_seconds
 
 async def shell_cmd(cmd):
     """ تشغيل أوامر النظام داخل asyncio """
@@ -38,102 +34,75 @@ class YouTubeAPI:
 
     async def url(self, message: Message):
         """ استخراج رابط الفيديو من الرسالة """
-        text = message.text or message.caption  # يدعم الرسائل النصية والميديا مع كابشن
+        text = message.text or message.caption  
         if not text:
+            print("❌ لا يوجد نص في الرسالة!")
             return None
 
         video_id_match = re.search(r"(?:v=|youtu\.be/|embed/|shorts/|watch\?v=)([\w-]+)", text)
         if video_id_match:
-            return self.base + video_id_match.group(1)
-        return None
+            url = self.base + video_id_match.group(1)
+            print(f"✅ رابط الفيديو المستخرج: {url}")
+            return url
+        else:
+            print("❌ لم يتم العثور على رابط فيديو!")
+            return None
 
     async def video(self, link: str, videoid: Union[bool, str] = None):
-        """ جلب رابط الفيديو باستخدام yt-dlp """
+        """ جلب رابط تشغيل الفيديو باستخدام yt-dlp """
         if videoid:
             link = self.base + link
         print(f"🔹 تشغيل video() مع الرابط: {link}")
+
         proc = await asyncio.create_subprocess_exec(
             "yt-dlp",
             "--cookies", cookies_file,
             "-g",
-            "-f",
-            "best[height<=?720][width<=?1280]",
+            "-f", "best[height<=?720][width<=?1280]",
             f"{link}",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE,
         )
         stdout, stderr = await proc.communicate()
-        return (1, stdout.decode().split("\n")[0]) if stdout else (0, stderr.decode())
+        
+        # طباعة المخرجات للتصحيح
+        print(f"🔹 yt-dlp stdout: {stdout.decode().strip()}")
+        print(f"🔹 yt-dlp stderr: {stderr.decode().strip()}")
 
-    async def playlist(self, link, limit, user_id, videoid: Union[bool, str] = None):
-        """ جلب قائمة تشغيل من YouTube """
-        if videoid:
-            link = self.listbase + link
-        print(f"🔹 تشغيل playlist() مع الرابط: {link}")
-        playlist = await shell_cmd(
-            f"yt-dlp --cookies {cookies_file} -i --get-id --flat-playlist --playlist-end {limit} --skip-download {link}"
-        )
-        return [key for key in playlist.split("\n") if key]
-
-    async def download(self, link: str, title: str, format_id: str, songvideo: bool = False, songaudio: bool = False):
-        """ تحميل الصوت أو الفيديو من YouTube """
-        loop = asyncio.get_running_loop()
-
-        def download_audio():
-            ydl_opts = {
-                "format": format_id,
-                "outtmpl": f"downloads/{title}.%(ext)s",
-                "geo_bypass": True,
-                "nocheckcertificate": True,
-                "quiet": True,
-                "cookiefile": cookies_file,
-                "postprocessors": [
-                    {
-                        "key": "FFmpegExtractAudio",
-                        "preferredcodec": "mp3",
-                        "preferredquality": "192",
-                    }
-                ],
-            }
-            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                ydl.download([link])
-
-        def download_video():
-            ydl_opts = {
-                "format": f"{format_id}+140",
-                "outtmpl": f"downloads/{title}",
-                "geo_bypass": True,
-                "nocheckcertificate": True,
-                "quiet": True,
-                "cookiefile": cookies_file,
-                "prefer_ffmpeg": True,
-                "merge_output_format": "mp4",
-            }
-            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                ydl.download([link])
-
-        if songvideo:
-            print(f"🔹 تحميل فيديو: {title}")
-            await loop.run_in_executor(None, download_video)
-            return f"downloads/{title}.mp4"
-        elif songaudio:
-            print(f"🔹 تحميل صوت: {title}")
-            await loop.run_in_executor(None, download_audio)
-            return f"downloads/{title}.mp3"
+        if stdout:
+            return 1, stdout.decode().strip()
+        else:
+            return 0, stderr.decode().strip()
 
 
-# ✅ **مثال استدعاء `url()` و `video()` معًا**
 async def process_message(message: Message):
+    """ تشغيل الأغنية عند استلام رابط يوتيوب في رسالة """
     youtube = YouTubeAPI()
     url = await youtube.url(message)
-    
-    if url:
-        print(f"✅ رابط الفيديو المستخرج: {url}")
-        status, video_url = await youtube.video(url)
-        
-        if status == 1:
-            print(f"🎵 رابط التشغيل: {video_url}")
-        else:
-            print(f"❌ خطأ في جلب الفيديو: {video_url}")
-    else:
+
+    if not url:
         print("❌ لم يتم العثور على رابط فيديو في الرسالة!")
+        return "❌ لم يتم العثور على رابط فيديو!"
+
+    status, video_url = await youtube.video(url)
+
+    if status == 1:
+        print(f"🎵 رابط التشغيل: {video_url}")
+        return video_url
+    else:
+        print(f"❌ خطأ في جلب الفيديو: {video_url}")
+        return f"❌ خطأ في جلب الفيديو: {video_url}"
+
+
+# ✅ **مثال تشغيل الفيديو**
+async def main():
+    class FakeMessage:
+        text = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        caption = None
+
+    message = FakeMessage()
+    result = await process_message(message)
+    print("🔹 النتيجة:", result)
+
+if __name__ == "__main__":
+    asyncio.run(main())
