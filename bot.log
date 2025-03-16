@@ -19927,3 +19927,10 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.9/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
     raise ValueError(f"Peer id invalid: {peer_id}")
 ValueError: Peer id invalid: -1002332947533
+[16-Mar-25 20:36:34 - INFO] - BotLogger - Logger has been initialized successfully!
+[16-Mar-25 20:36:34 - INFO] - BotLogger - ميوزك فوكس - جـارِ الاتصـال بقاعـدة البيانـات . . .
+[16-Mar-25 20:36:35 - INFO] - BotLogger - تم الاتصـال بقاعـدة البيانـات ...✓
+[16-Mar-25 20:36:35 - INFO] - BotLogger - تم تحـديث السـورس ...✓
+[16-Mar-25 20:36:35 - INFO] - BotLogger - ✅ تم تحديث قاعدة بيانات البوت بنجاح
+[16-Mar-25 20:36:35 - INFO] - BotLogger - ⚠️ البوت لا يعمل على Heroku، تجاوز إعدادات Heroku
+[16-Mar-25 20:36:35 - INFO] - BotLogger - ميوزك اليــكس - جارِ بدء تشغيل البوت . . .
