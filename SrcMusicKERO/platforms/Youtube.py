@@ -1,15 +1,17 @@
 import asyncio
+import glob
 import os
-import re
+import random
 from typing import Union
-
 import yt_dlp
-from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
 from config import PLAYLIST_IMG_URL, sudoers as SUDOERS, adminlist  # ✅ تم تصحيح الخطأ هنا
 
+cookies_file = "/fox2/cookies/cookies_fixed.txt"
+
+# دمج الكودين هنا
 async def shell_cmd(cmd):
     """ تشغيل أوامر النظام داخل asyncio """
     proc = await asyncio.create_subprocess_shell(
@@ -19,9 +21,6 @@ async def shell_cmd(cmd):
     )
     out, errorz = await proc.communicate()
     return out.decode("utf-8") if not errorz else errorz.decode("utf-8")
-
-# 🔹 تعديل مسار ملف الكوكيز بدون "root"
-cookies_file = "/fox2/cookies/cookies_fixed.txt"
 
 class YouTubeAPI:
     def __init__(self):
@@ -73,54 +72,51 @@ class YouTubeAPI:
         )
         return [key for key in playlist.split("\n") if key]
 
-    async def download(self, link: str, title: str, format_id: str, songvideo: bool = False, songaudio: bool = False):
-        """ تحميل الصوت أو الفيديو من YouTube """
+    async def download(self, client, bot_username, link, video: Union[bool, str] = None):
         loop = asyncio.get_running_loop()
+        logger = await get_logger(bot_username)
+        output_file = f"{bot_username}_{random.randint(1000, 9999)}.%(ext)s"
 
-        def download_audio():
-            ydl_opts = {
-                "format": format_id,
-                "outtmpl": f"downloads/{title}.%(ext)s",
-                "geo_bypass": True,
-                "nocheckcertificate": True,
-                "quiet": True,
-                "cookiefile": cookies_file,
-                "postprocessors": [
-                    {
-                        "key": "FFmpegExtractAudio",
-                        "preferredcodec": "mp3",
-                        "preferredquality": "192",
-                    }
-                ],
-            }
+        ydl_opts = {
+            "format": "bestvideo+bestaudio/best" if video else "bestaudio/best",
+            "outtmpl": output_file,
+            "quiet": True,
+            "nocheckcertificate": True,
+            "cookiefile": cookies_file,
+            "postprocessors": [{
+                'key': 'FFmpegExtractAudio',
+                'preferredcodec': 'mp3',
+                'preferredquality': '192',
+            }] if not video else []
+        }
+
+        try:
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                ydl.download([link])
+                await loop.run_in_executor(None, lambda: ydl.download([f"https://youtube.com{link}"]))
+        except Exception as e:
+            error_message = f"حدث خطأ أثناء التحميل: {e}"
+            print(error_message)
+            await client.send_message(logger, f"**فشل التحميل:**\n`{error_message}`")
+            return None
 
-        def download_video():
-            ydl_opts = {
-                "format": f"{format_id}+140",
-                "outtmpl": f"downloads/{title}",
-                "geo_bypass": True,
-                "nocheckcertificate": True,
-                "quiet": True,
-                "cookiefile": cookies_file,
-                "prefer_ffmpeg": True,
-                "merge_output_format": "mp4",
-            }
-            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                ydl.download([link])
+        files = glob.glob(f"{bot_username}_*.mp3" if not video else f"{bot_username}_*.*")
+        if not files:
+            await client.send_message(logger, "**فشل تحميل الملف من يوتيوب. قد يكون الفيديو خاص أو به قيود.**")
+            return None
 
-        if songvideo:
-            print(f"🔹 تحميل فيديو: {title}")
-            await loop.run_in_executor(None, download_video)
-            return f"downloads/{title}.mp4"
-        elif songaudio:
-            print(f"🔹 تحميل صوت: {title}")
-            await loop.run_in_executor(None, download_audio)
-            return f"downloads/{title}.mp3"
+        file_path = files[0]
+        sent_msg = await client.send_audio(logger, file_path) if not video else await client.send_video(logger, file_path)
+        downloaded_path = await sent_msg.download()
 
-# ✅ **مثال استدعاء `url()` و `video()` معًا**
-async def process_message(message: Message):
+        try:
+            os.remove(file_path)
+        except Exception as e:
+            print(f"خطأ أثناء حذف الملف: {e}")
+
+        return downloaded_path
+
+# **مثال استدعاء `url()` و `video()` معًا**
+async def process_message(client, message: Message):
     youtube = YouTubeAPI()
     url = await youtube.url(message)
     
@@ -130,6 +126,10 @@ async def process_message(message: Message):
         
         if status == 1:
             print(f"🎵 رابط التشغيل: {video_url}")
+            # استدعاء دالة التنزيل هنا
+            downloaded_path = await youtube.download(client, "bot_username", url, video=True)
+            if downloaded_path:
+                print(f"📥 تم تنزيل الفيديو إلى: {downloaded_path}")
         else:
             print(f"❌ خطأ في جلب الفيديو: {video_url}")
     else:
